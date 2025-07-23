@@ -13,6 +13,6 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: 'build', // ✅ THIS IS WHAT YOU NEED
+    outDir: 'build',
   },
 });
