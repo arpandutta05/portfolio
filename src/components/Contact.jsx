@@ -1,9 +1,13 @@
-import { Mail, Phone, Linkedin, Github, MapPin, Send } from "lucide-react"
+import { Mail, Phone, Linkedin, Github, MapPin, Send, LucideInstagram, InstagramIcon, X, TwitterIcon } from "lucide-react"
+import { useState } from "react"
 import { Button } from "./ui/Button"
 import { Card, CardContent } from "./ui/Card"
 import ScrollReveal from "./ScrollReveal"
+import { Instagram, Twitter } from "react-feather"
 
 const Contact = () => {
+  const [showForm, setShowForm] = useState(false)
+
   const contactInfo = [
     {
       icon: Phone,
@@ -22,16 +26,36 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "linkedin.com/in/arpandutta2k26",
+      value: "arpandutta2k26",
       href: "https://linkedin.com/in/arpandutta2k26",
       color: "from-purple-500 to-pink-500",
     },
     {
       icon: Github,
       label: "GitHub",
-      value: "github.com/arpandutta05",
+      value: "arpandutta05",
       href: "https://github.com/arpandutta05",
       color: "from-orange-500 to-red-500",
+    },
+    {
+      icon:() => (
+    <img
+      src="https://img.icons8.com/ios7/512/FFFFFF/twitterx.png" // replace with your actual image path
+      alt="X"
+      className="w-6 h-6 object-contain"
+    />
+  ),
+      label: "X (Twitter)",
+      value: "romioarpan",
+      href: "https://x.com/romioarpan",
+      color: "from-gray-800 to-black",
+    },
+    {
+      icon: Instagram,
+      label: "Instagram",
+      value: "romio.arpan",
+      href: "https://www.instagram.com/romio.arpan/",
+      color: "from-pink-500 via-red-500 to-yellow-500",
     },
   ]
 
@@ -121,27 +145,72 @@ const Contact = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button
                   size="lg"
+                  onClick={() => setShowForm(!showForm)}
                   className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
                 >
                   <Send className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                   Send Message
                 </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="bg-transparent border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/50 transform hover:scale-105 transition-all duration-300"
+                <a
+                  href="tel:9547835404"
+                  className="flex items-center justify-center px-6 py-3 border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/50 rounded-lg transform hover:scale-105 transition-all duration-300"
                 >
                   <Phone className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                   Schedule Call
-                </Button>
+                </a>
               </div>
+
+              {showForm && (
+                <form
+                  action="https://formspree.io/f/xovldvqk"
+                  method="POST"
+                  className="mt-8 grid gap-4 text-left"
+                >
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                    className="p-3 rounded-md bg-white/10 border border-white/20 text-white placeholder-gray-300"
+                  />
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Mobile No"
+                    className="p-3 rounded-md bg-white/10 border border-white/20 text-white placeholder-gray-300"
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Mail"
+                    required
+                    className="p-3 rounded-md bg-white/10 border border-white/20 text-white placeholder-gray-300"
+                  />
+                  <input
+                    type="text"
+                    name="reason"
+                    placeholder="Reason"
+                    className="p-3 rounded-md bg-white/10 border border-white/20 text-white placeholder-gray-300"
+                  />
+                  <textarea
+                    name="message"
+                    rows={4}
+                    placeholder="Message"
+                    required
+                    className="p-3 rounded-md bg-white/10 border border-white/20 text-white placeholder-gray-300"
+                  ></textarea>
+                  <Button className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                    Submit
+                  </Button>
+                </form>
+              )}
             </div>
           </div>
         </ScrollReveal>
 
         <ScrollReveal animation="fade-up" delay={900}>
           <div className="text-center mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-white/20">
-            <p className="text-gray-400 text-sm sm:text-base">© 2025 - Arpan Dutta. Crafted with ❤️ and lots of ☕</p>
+            <p className="text-gray-400 text-sm sm:text-base">© 2025 - &lt;Arpan Dutta /&gt; Crafted with ❤️ and lots of ☕</p>
           </div>
         </ScrollReveal>
       </div>

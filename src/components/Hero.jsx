@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { Github, Linkedin, Mail, Phone, Download, Sparkles, Coffee } from "lucide-react"
+import { Github, Linkedin, Mail, Phone, Download, Sparkles, Coffee, Instagram, Twitter } from "lucide-react"
 import { Button } from "./ui/Button"
 
 const Hero = () => {
@@ -92,122 +92,70 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-8 animate-fade-in-up animation-delay-900 px-4">
-          <Button
-            variant="outline"
-            size="sm"
-            className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border-purple-400/30 hover:border-purple-400 hover:bg-purple-500/20 text-white transition-all duration-300"
-          >
-            <a
-  href="tel:+919547835404"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="flex items-center space-x-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500"
->
-            <Phone className="w-4 h-4 text-purple-400" />
-            <span className="hidden sm:inline">+91-9547835404</span>
-            <span className="sm:hidden">Call</span>
-          </a>
+          {/* Contact Buttons */}
+          <Button variant="outline" size="sm" className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border-purple-400/30 hover:border-purple-400 hover:bg-purple-500/20 text-white transition-all duration-300">
+            <a href="tel:+919547835404" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">
+              <Phone className="w-4 h-4 text-purple-400" />
+              {/* <span className="hidden sm:inline">Call</span> */}
+              <span className="sm:hidden">Call</span>
+            </a>
           </Button>
-          <Button
-            variant="outline"
-            size="sm"
-            className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border-cyan-400/30 hover:border-cyan-400 hover:bg-cyan-500/20 text-white transition-all duration-300"
-          >
-            <a
-  href="https://mail.google.com/mail/?view=cm&fs=1&to=arpandutta.in@gmail.com"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="flex items-center space-x-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500"
->
-  <Mail className="w-4 h-4 text-cyan-400" />
-  <span className="hidden sm:inline">Gmail</span>
-  <span className="sm:hidden">arpandutta.in@gmail.com</span>
-</a>
 
+          <Button variant="outline" size="sm" className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border-cyan-400/30 hover:border-cyan-400 hover:bg-cyan-500/20 text-white transition-all duration-300">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=arpandutta.in@gmail.com" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">
+              <Mail className="w-4 h-4 text-cyan-400" />
+              {/* <span className="hidden sm:inline">Gmail</span> */}
+              <span className="sm:hidden">Mail</span>
+            </a>
           </Button>
-          <Button
-            variant="outline"
-            size="sm"
-            className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border-pink-400/30 hover:border-pink-400 hover:bg-pink-500/20 text-white transition-all duration-300"
-          >
-            <a
-  href="https://linkedin.com/in/arpandutta2k26"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="flex items-center space-x-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500"
->
-            <Linkedin className="w-4 h-4 text-pink-400" />
-            <span className="hidden sm:inline">LinkedIn</span>
-            <span className="sm:hidden">LinkedIn</span>
-          </a>
 
+          <Button variant="outline" size="sm" className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border-pink-400/30 hover:border-pink-400 hover:bg-pink-500/20 text-white transition-all duration-300">
+            <a href="https://linkedin.com/in/arpandutta2k26" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">
+              <Linkedin className="w-4 h-4 text-pink-400" />
+              {/* <span className="hidden sm:inline">LinkedIn</span> */}
+            </a>
           </Button>
-          <Button
-            variant="outline"
-            size="sm"
-            className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border-green-400/30 hover:border-green-400 hover:bg-green-500/20 text-white transition-all duration-300"
-          >
-            <a
-  href="https://github.com/arpandutta05"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="flex items-center space-x-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500"
->
-            <Github className="w-4 h-4 text-green-400" />
-            <span className="hidden sm:inline">GitHub</span>
-            <span className="sm:hidden">GitHub</span>
-          </a>
+
+          <Button variant="outline" size="sm" className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border-green-400/30 hover:border-green-400 hover:bg-green-500/20 text-white transition-all duration-300">
+            <a href="https://github.com/arpandutta05" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">
+              <Github className="w-4 h-4 text-green-400" />
+              {/* <span className="hidden sm:inline">GitHub</span> */}
+            </a>
+          </Button>
+
+          <Button variant="outline" size="sm" className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border-pink-400/30 hover:border-pink-400 hover:bg-pink-500/20 text-white transition-all duration-300">
+            <a href="https://www.instagram.com/romio.arpan/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">
+              <Instagram className="w-4 h-4 text-pink-400" />
+              {/* <span className="hidden sm:inline">Instagram</span> */}
+            </a>
+          </Button>
+
+          <Button variant="outline" size="sm" className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border-sky-400/30 hover:border-sky-400 hover:bg-sky-500/20 text-white transition-all duration-300">
+            <a href="https://x.com/romioarpan" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">
+              <Twitter className="w-4 h-4 text-sky-400" />
+              {/* <span className="hidden sm:inline">X</span> */}
+            </a>
           </Button>
         </div>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-up animation-delay-1200 px-4">
-          <Button
-  asChild
-  size="lg"
-  className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
->
-  <a
-    href="https://github.com/arpandutta05?tab=repositories"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex items-center"
-  >
-    <Sparkles className="w-4 h-4 mr-2" />
-    View Projects
-  </a>
-</Button>
+          <Button asChild size="lg" className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+            <a href="https://github.com/arpandutta05?tab=repositories" target="_blank" rel="noopener noreferrer" className="flex items-center">
+              <Sparkles className="w-4 h-4 mr-2" />
+              View Projects
+            </a>
+          </Button>
 
-          <Button
-  size="lg"
-  variant="outline"
-  className="bg-white/10 backdrop-blur-sm border-2 border-purple-400/30 hover:border-purple-400 hover:bg-purple-500/20 text-white transition-all duration-300 px-4"
->
-  <div className="flex items-center space-x-2">
-    {/* Download Icon Action */}
-    <a
-      href="https://drive.google.com/uc?export=download&id=1ZIVIYrpcdBFAWPF0CRgT6sAsuHKbUhHQ"
-      download
-      onClick={(e) => e.stopPropagation()}
-      className="hover:scale-110 transition-transform"
-      title="Download Resume"
-    >
-      <Download className="w-4 h-4 text-white" />
-    </a>
-
-    {/* View Resume Text Action */}
-    <a
-      href="https://drive.google.com/file/d/1ZIVIYrpcdBFAWPF0CRgT6sAsuHKbUhHQ/view?usp=sharing"
-      target="_blank"
-      rel="noopener noreferrer"
-      onClick={(e) => e.stopPropagation()}
-      className="font-medium text-white hover:underline"
-    >
-      View Resume
-    </a>
-  </div>
-</Button>
-
-
+          <Button size="lg" variant="outline" className="bg-white/10 backdrop-blur-sm border-2 border-purple-400/30 hover:border-purple-400 hover:bg-purple-500/20 text-white transition-all duration-300 px-4">
+            <div className="flex items-center space-x-2">
+              <a href="https://drive.google.com/uc?export=download&id=1ZIVIYrpcdBFAWPF0CRgT6sAsuHKbUhHQ" download onClick={(e) => e.stopPropagation()} className="hover:scale-110 transition-transform" title="Download Resume">
+                <Download className="w-4 h-4 text-white" />
+              </a>
+              <a href="https://drive.google.com/file/d/1ZIVIYrpcdBFAWPF0CRgT6sAsuHKbUhHQ/view?usp=sharing" target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} className="font-medium text-white hover:underline">
+                View Resume
+              </a>
+            </div>
+          </Button>
         </div>
       </div>
     </section>

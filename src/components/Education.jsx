@@ -7,80 +7,80 @@ const Education = () => {
     {
       degree: "B.Tech in Computer Science & Engineering",
       institution: "JIS College of Engineering, Kalyani",
-      grade: "6.91 CGPA (Till 5th Sem)",
+      // grade: "6.91 CGPA (Till 5th Sem)",
       year: "2022-2026",
       status: "Pursuing",
-      image: "https://via.placeholder.com/400x300/3B82F6/FFFFFF?text=JIS+College",
+      image: "https://images.shiksha.com/mediadata/images/1622622785phpNI1ygk.jpeg",
       color: "from-blue-500 to-purple-500",
-      documents: [
-        {
-          name: "Admission Letter.pdf",
-          url: "https://via.placeholder.com/600x400/3B82F6/FFFFFF?text=Admission+Letter",
-          type: "application/pdf",
-        },
-        {
-          name: "Semester 1 Marksheet.pdf",
-          url: "https://via.placeholder.com/600x400/3B82F6/FFFFFF?text=Sem+1+Marksheet",
-          type: "application/pdf",
-        },
-        {
-          name: "College ID Card.jpg",
-          url: "https://via.placeholder.com/300x200/3B82F6/FFFFFF?text=College+ID",
-          type: "image/jpeg",
-        },
-        {
-          name: "College Photo.jpg",
-          url: "https://via.placeholder.com/600x400/3B82F6/FFFFFF?text=College+Building",
-          type: "image/jpeg",
-        },
-      ],
+      // documents: [
+      //   {
+      //     name: "Admission Letter.pdf",
+      //     url: "https://via.placeholder.com/600x400/3B82F6/FFFFFF?text=Admission+Letter",
+      //     type: "application/pdf",
+      //   },
+      //   {
+      //     name: "Semester 1 Marksheet.pdf",
+      //     url: "https://via.placeholder.com/600x400/3B82F6/FFFFFF?text=Sem+1+Marksheet",
+      //     type: "application/pdf",
+      //   },
+      //   {
+      //     name: "College ID Card.jpg",
+      //     url: "https://via.placeholder.com/300x200/3B82F6/FFFFFF?text=College+ID",
+      //     type: "image/jpeg",
+      //   },
+      //   {
+      //     name: "College Photo.jpg",
+      //     url: "https://via.placeholder.com/600x400/3B82F6/FFFFFF?text=College+Building",
+      //     type: "image/jpeg",
+      //   },
+      // ],
     },
     {
       degree: "Higher Secondary",
       institution: "Basirhat Town High School (WBCHSE)",
-      grade: "81%",
+      // grade: "81%",
       year: "2022",
       status: "Completed",
-      image: "https://via.placeholder.com/400x300/10B981/FFFFFF?text=High+School",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiBh9i-TmILlP1F9ae1QkhYzQ7oFKbRIBD4w&s",
       color: "from-green-500 to-blue-500",
-      documents: [
-        {
-          name: "HS Admit Card.pdf",
-          url: "https://via.placeholder.com/600x400/10B981/FFFFFF?text=HS+Admit+Card",
-          type: "application/pdf",
-        },
-        {
-          name: "HS Marksheet.pdf",
-          url: "https://via.placeholder.com/600x400/10B981/FFFFFF?text=HS+Marksheet",
-          type: "application/pdf",
-        },
-        {
-          name: "School Photo.jpg",
-          url: "https://via.placeholder.com/600x400/10B981/FFFFFF?text=School+Building",
-          type: "image/jpeg",
-        },
-      ],
+      // documents: [
+      //   {
+      //     name: "HS Admit Card.pdf",
+      //     url: "https://via.placeholder.com/600x400/10B981/FFFFFF?text=HS+Admit+Card",
+      //     type: "application/pdf",
+      //   },
+      //   {
+      //     name: "HS Marksheet.pdf",
+      //     url: "https://via.placeholder.com/600x400/10B981/FFFFFF?text=HS+Marksheet",
+      //     type: "application/pdf",
+      //   },
+      //   {
+      //     name: "School Photo.jpg",
+      //     url: "https://via.placeholder.com/600x400/10B981/FFFFFF?text=School+Building",
+      //     type: "image/jpeg",
+      //   },
+      // ],
     },
     {
       degree: "Secondary",
       institution: "Rampur P.D.S.S. Niketan (WBBSE)",
-      grade: "77%",
+      // grade: "77%",
       year: "2020",
       status: "Completed",
       image: "https://via.placeholder.com/400x300/F97316/FFFFFF?text=Secondary+School",
       color: "from-orange-500 to-red-500",
-      documents: [
-        {
-          name: "Madhyamik Admit Card.pdf",
-          url: "https://via.placeholder.com/600x400/F97316/FFFFFF?text=Madhyamik+Admit+Card",
-          type: "application/pdf",
-        },
-        {
-          name: "Madhyamik Marksheet.pdf",
-          url: "https://via.placeholder.com/600x400/F97316/FFFFFF?text=Madhyamik+Marksheet",
-          type: "application/pdf",
-        },
-      ],
+      // documents: [
+      //   {
+      //     name: "Madhyamik Admit Card.pdf",
+      //     url: "https://via.placeholder.com/600x400/F97316/FFFFFF?text=Madhyamik+Admit+Card",
+      //     type: "application/pdf",
+      //   },
+      //   {
+      //     name: "Madhyamik Marksheet.pdf",
+      //     url: "https://via.placeholder.com/600x400/F97316/FFFFFF?text=Madhyamik+Marksheet",
+      //     type: "application/pdf",
+      //   },
+      // ],
     },
   ]
 

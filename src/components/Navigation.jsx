@@ -35,10 +35,12 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center gap-2">
-            <Coffee className="w-6 h-6 text-amber-400" />
+          
+            {/* <Coffee className="w-6 h-6 text-amber-400" /> */}
             <div className="text-xl font-bold bg-gradient-to-r from-amber-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
-              Arpan Dutta
+              &lt;Arpan Dutta /&gt;
             </div>
+            
           </div>
 
           <div className="hidden md:flex space-x-8">
