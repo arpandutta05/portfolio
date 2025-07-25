@@ -14,7 +14,7 @@ const Skills = () => {
     },
     {
       title: "Frameworks & Libraries",
-      skills: ["React", "Node.js", "Express.js", "Flask", "Tailwind CSS", "Bootstrap"],
+      skills: ["React", "Node.js"],
       icon: Layers,
       color: "from-green-500 to-emerald-500",
       bgColor: "from-green-500/10 to-emerald-500/10",
@@ -22,7 +22,7 @@ const Skills = () => {
     },
     {
       title: "Databases & Storage",
-      skills: ["MongoDB", "MySQL", "Supabase", "Firebase", "Redis"],
+      skills: ["MongoDB", "MySQL", "Supabase"],
       icon: Database,
       color: "from-purple-500 to-pink-500",
       bgColor: "from-purple-500/10 to-pink-500/10",
@@ -30,7 +30,7 @@ const Skills = () => {
     },
     {
       title: "Tools & Platforms",
-      skills: ["VSCode", "Google Colab", "Git", "GitHub", "Docker", "AWS", "Vercel"],
+      skills: ["VSCode", "Google Colab", "Git", "GitHub", "Vercel"],
       icon: Wrench,
       color: "from-orange-500 to-red-500",
       bgColor: "from-orange-500/10 to-red-500/10",

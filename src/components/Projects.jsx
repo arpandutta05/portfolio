@@ -1,8 +1,14 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/Card"
-import { Button } from "./ui/Button"
-import { ExternalLink, Github, Star, Zap } from "lucide-react"
-import ScrollReveal from "./ScrollReveal"
-import DocumentViewer from "./DocumentViewer"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "./ui/Card";
+import { Button } from "./ui/Button";
+import { ExternalLink, Github, Star, Zap } from "lucide-react";
+import ScrollReveal from "./ScrollReveal";
+import DocumentViewer from "./DocumentViewer";
 
 const Projects = () => {
   const projects = [
@@ -10,75 +16,52 @@ const Projects = () => {
       title: "CKD Prediction using ML",
       description:
         "Developed and deployed a web application using full-stack technologies to predict CKD risk and diagnose cases. Facilitated CSV upload, selection among 4 medical datasets, and download of predicted results.",
-      tech: ["Flask", "XGBoost", "scikit-learn", "React", "Vite", "Tailwind CSS"],
-      image: "https://via.placeholder.com/500x300/3B82F6/FFFFFF?text=CKD+Prediction+ML",
-      liveDemo: "#",
-      github: "#",
+      tech: [
+        "Flask",
+        "XGBoost",
+        "scikit-learn",
+        "React",
+        "Vite",
+        "Tailwind CSS",
+      ],
+      image:
+        "https://github.com/arpandutta05/CKD_Prediction/blob/main/frontend/src/assets/ckd_illustration.png?raw=true",
+      liveDemo: "https://ckdprediction.vercel.app/",
+      github: "https://github.com/arpandutta05/CKD_Prediction",
       color: "from-blue-500 to-cyan-500",
       featured: true,
-      documents: [
-        {
-          name: "Project Report.pdf",
-          url: "https://via.placeholder.com/600x400/3B82F6/FFFFFF?text=CKD+Project+Report",
-          type: "application/pdf",
-        },
-        {
-          name: "Demo Screenshots.pdf",
-          url: "https://via.placeholder.com/600x400/3B82F6/FFFFFF?text=Demo+Screenshots",
-          type: "application/pdf",
-        },
-      ],
     },
     {
       title: "DocScribd - Doctor Appointment Booking",
       description:
         "Created DocScribd, a MERN stack web app for live doctor appointment booking with role-based access for clinics and patients. Implemented JWT-based authentication and authorization mechanism.",
       tech: ["MongoDB", "Express.js", "React", "Node.js", "JWT"],
-      image: "https://via.placeholder.com/500x300/10B981/FFFFFF?text=DocScribd+App",
-      liveDemo: "#",
-      github: "#",
+      image:
+        "https://docscribd.vercel.app/static/media/brand_logo.f58c356d3724b91d5018.png",
+      liveDemo: "https://docscribd.vercel.app/",
+      github: "https://github.com/arpandutta05/DocScribd",
       color: "from-green-500 to-emerald-500",
       featured: true,
-      documents: [
-        {
-          name: "DocScribd Report.pdf",
-          url: "https://via.placeholder.com/600x400/10B981/FFFFFF?text=DocScribd+Report",
-          type: "application/pdf",
-        },
-        {
-          name: "Database Schema.pdf",
-          url: "https://via.placeholder.com/600x400/10B981/FFFFFF?text=Database+Schema",
-          type: "application/pdf",
-        },
-      ],
     },
     {
       title: "PlantTribe - Smart Gardening Platform",
       description:
         "Built PlantTribe, a MERN stack web platform that connects gardeners, farmers, and dealers. Features image-based plant disease detection, compost tracking, and voice-assisted guidance.",
       tech: ["MERN Stack", "Razorpay", "ML", "Voice Recognition"],
-      image: "https://via.placeholder.com/500x300/A855F7/FFFFFF?text=PlantTribe+Platform",
-      liveDemo: "#",
-      github: "#",
+      image:
+        "https://via.placeholder.com/500x300/A855F7/FFFFFF?text=PlantTribe+Platform",
+      liveDemo: "https://planttribe.onrender.com/",
+      github: "https://github.com/arpandutta05/PlantTribe",
       color: "from-purple-500 to-pink-500",
       featured: true,
-      documents: [
-        {
-          name: "PlantTribe Documentation.pdf",
-          url: "https://via.placeholder.com/600x400/A855F7/FFFFFF?text=PlantTribe+Documentation",
-          type: "application/pdf",
-        },
-        {
-          name: "ML Model Details.pdf",
-          url: "https://via.placeholder.com/600x400/A855F7/FFFFFF?text=ML+Model+Details",
-          type: "application/pdf",
-        },
-      ],
     },
-  ]
+  ];
 
   return (
-    <section id="projects" className="py-16 sm:py-20 px-4 relative overflow-hidden">
+    <section
+      id="projects"
+      className="py-16 sm:py-20 px-4 relative overflow-hidden"
+    >
       <div className="absolute inset-0 bg-gradient-to-br from-slate-800/40 via-purple-800/30 to-indigo-800/40"></div>
 
       <div className="max-w-7xl mx-auto relative z-10">
@@ -89,7 +72,8 @@ const Projects = () => {
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto rounded-full"></div>
             <p className="text-lg sm:text-xl text-gray-300 mt-6 max-w-2xl mx-auto">
-              Innovative solutions combining cutting-edge technology with real-world applications
+              Innovative solutions combining cutting-edge technology with
+              real-world applications
             </p>
           </div>
         </ScrollReveal>
@@ -120,21 +104,33 @@ const Projects = () => {
                   ></div>
 
                   <div className="absolute inset-0 flex items-center justify-center gap-3 sm:gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <Button
-                      size="sm"
-                      className="bg-white/90 text-gray-900 hover:bg-white shadow-lg text-xs sm:text-sm transform hover:scale-110 transition-all duration-200"
+                    <a
+                      href={project.liveDemo}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
-                      Live Demo
-                    </Button>
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      className="bg-white/90 border-white text-gray-900 hover:bg-white shadow-lg text-xs sm:text-sm transform hover:scale-110 transition-all duration-200"
+                      <Button
+                        size="sm"
+                        className="bg-white/90 text-gray-900 hover:bg-white shadow-lg text-xs sm:text-sm transform hover:scale-110 transition-all duration-200"
+                      >
+                        <Zap className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
+                        Explore
+                      </Button>
+                    </a>
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      <Github className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
-                      Code
-                    </Button>
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className="bg-white/90 border-white text-gray-900 hover:bg-white shadow-lg text-xs sm:text-sm transform hover:scale-110 transition-all duration-200"
+                      >
+                        <Github className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
+                        Code
+                      </Button>
+                    </a>
                   </div>
                 </div>
 
@@ -159,24 +155,10 @@ const Projects = () => {
                     ))}
                   </div>
 
-                  <div className="flex gap-2 sm:gap-3 mb-4">
-                    <Button
-                      size="sm"
-                      className={`flex-1 bg-gradient-to-r ${project.color} hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-white text-xs sm:text-sm`}
-                    >
-                      <Zap className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
-                      Explore
-                    </Button>
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      className="bg-transparent border-2 hover:bg-gray-50/10 transform hover:scale-105 transition-all duration-300 text-white border-white/30 hover:border-white/50"
-                    >
-                      <Github className="w-3 h-3 sm:w-4 sm:h-4" />
-                    </Button>
-                  </div>
-
-                  <DocumentViewer documents={project.documents} title={project.title} />
+                  <DocumentViewer
+                    documents={project.documents}
+                    title={project.title}
+                  />
                 </CardContent>
 
                 <div
@@ -189,18 +171,24 @@ const Projects = () => {
 
         <ScrollReveal animation="fade-up" delay={600}>
           <div className="text-center mt-12 sm:mt-16">
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+            <a
+              href="https://github.com/arpandutta05?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <Github className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-              View All Projects on GitHub
-            </Button>
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+              >
+                <Github className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
+                View All Projects on GitHub
+              </Button>
+            </a>
           </div>
         </ScrollReveal>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

@@ -19,10 +19,11 @@ const Navigation = () => {
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
     { name: "Education", href: "#education" },
-    { name: "Achievements", href: "#achievements" },
-    { name: "Certificates", href: "#certificates" },
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
+    { name: "Hackathons", href: "#hackathons" },
+    { name: "Achievements", href: "#achievements" },
+    { name: "Certificates", href: "#certificates" },  
     { name: "Contact", href: "#contact" },
   ]
 

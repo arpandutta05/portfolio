@@ -35,12 +35,13 @@ function App() {
         <Hero />
         <About />
         <Education />
+        <Skills />
+        <Projects />
         <Hackathons />
         
         <Achievements />
         <Certificates />
-        <Skills />
-        <Projects />
+
         <Quotes />
         <Contact />
       </main>

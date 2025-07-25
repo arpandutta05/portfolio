@@ -67,8 +67,9 @@ const Hero = () => {
           </div>
 
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6 animate-gradient bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
-            Arpan Dutta
+            Hii,, I'm Arpan Dutta....
           </h1>
+          
 
           <div className="text-xl sm:text-2xl lg:text-3xl text-gray-300 mb-8 animate-fade-in-up animation-delay-300">
             <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent font-semibold">
