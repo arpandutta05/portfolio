@@ -7,6 +7,6 @@ export default defineConfig({
   resolve: { ... },
   build: {
     outDir: 'dist',
-  },
+  }
 });
 
