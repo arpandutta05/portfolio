@@ -69,7 +69,7 @@ const Skills = () => {
             const IconComponent = category.icon
             return (
               <ScrollReveal key={categoryIndex} animation="zoom-in" delay={categoryIndex * 200}>
-                <div className="group relative overflow-hidden rounded-3xl transition-all duration-700 hover:scale-105">
+                <div className="group relative overflow-hidden rounded-3xl transition-all duration-1000 hover:scale-105">
                   <div className={`absolute inset-0 bg-gradient-to-br ${category.bgColor} opacity-80`}></div>
                   <div className="absolute inset-0 bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl"></div>
 
@@ -114,15 +114,15 @@ const Skills = () => {
         <ScrollReveal animation="fade-up" delay={800}>
           <div className="mt-12 sm:mt-16 relative h-24 sm:h-32 ">
             <div className="absolute inset-0 flex items-center">
-              <div className="flex animate-scroll-left space-x-4 sm:space-x-6">
+              <div className="flex animate-scroll-left space-x-9 sm:space-x-8">
                 {[...Array(3)].map((_, repeatIndex) => (
-                  <div key={repeatIndex} className="flex space-x-4 sm:space-x-6">
+                  <div key={repeatIndex} className="flex space-x-9 sm:space-x-4">
                     {skillCategories
                       .flatMap((cat) => cat.skills)
                       .map((skill, index) => (
                         <div
-                          key={`${repeatIndex}-${index}`}
-                          className="flex-shrink-0 px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full font-medium shadow-lg text-sm sm:text-base hover:scale-110 transition-transform duration-300"
+                          key={`${repeatIndex}   ${index}`} // Use space for uniqueness
+                          className="flex-shrink-0 mx-2 sm:mx-9 px-4 sm:px-6 py-4 sm:py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full font-medium shadow-lg text-sm sm:text-base hover:scale-110 transition-transform duration-300"
                         >
                           {skill}
                         </div>
