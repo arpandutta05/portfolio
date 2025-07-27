@@ -62,7 +62,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-16 sm:py-20 px-4 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 relative overflow-hidden"
+      className="py-16 px-4 relative"
     >
       <div className="absolute inset-0">
         <div className="absolute top-20 left-20 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
@@ -153,7 +153,7 @@ const Contact = () => {
                 </Button>
                 <a
                   href="tel:9547835404"
-                  className="flex items-center justify-center px-6 py-3 border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/50 rounded-lg transform hover:scale-105 transition-all duration-300"
+                  className="flex items-center justify-center px-6 py-2 border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/50 rounded-lg transform hover:scale-105 transition-all duration-300"
                 >
                   <Phone className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                   Schedule Call

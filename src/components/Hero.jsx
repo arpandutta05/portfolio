@@ -17,10 +17,10 @@ const Hero = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center px-4 py-20 relative overflow-hidden">
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob"></div>
+      <div className="py-16 px-4 relative">
+        {/* <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob"></div>
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-2000"></div>
-        <div className="absolute top-40 left-40 w-80 h-80 bg-gradient-to-br from-amber-500 to-orange-500 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-4000"></div>
+        <div className="absolute top-40 left-40 w-80 h-80 bg-gradient-to-br from-amber-500 to-orange-500 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-4000"></div> */}
       </div>
 
       <div className="absolute inset-0">
@@ -98,7 +98,7 @@ const Hero = () => {
             <a href="tel:+919547835404" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">
               <Phone className="w-4 h-4 text-purple-400" />
               {/* <span className="hidden sm:inline">Call</span> */}
-              <span className="sm:hidden">Call</span>
+              {/* <span className="sm:hidden">Call</span> */}
             </a>
           </Button>
 
@@ -106,7 +106,7 @@ const Hero = () => {
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=arpandutta.in@gmail.com" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">
               <Mail className="w-4 h-4 text-cyan-400" />
               {/* <span className="hidden sm:inline">Gmail</span> */}
-              <span className="sm:hidden">Mail</span>
+              {/* <span className="sm:hidden">Mail</span> */}
             </a>
           </Button>
 

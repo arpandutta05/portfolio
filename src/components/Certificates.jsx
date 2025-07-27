@@ -6,126 +6,126 @@ import DocumentViewer from "./DocumentViewer"
 
 const Certificates = () => {
   const certificates = [
-    {
-      title: "Full Stack Web Development",
-      issuer: "Coursera",
-      date: "2023",
-      image: "https://via.placeholder.com/300x200/3B82F6/FFFFFF?text=Full+Stack+Certificate",
-      color: "from-blue-500 to-cyan-500",
-      type: "Course Completion",
-      documents: [
-        {
-          name: "Certificate.pdf",
-          url: "https://via.placeholder.com/600x400/3B82F6/FFFFFF?text=Full+Stack+Certificate",
-          type: "application/pdf",
-        },
-        {
-          name: "Course Completion Badge.png",
-          url: "https://via.placeholder.com/300x300/3B82F6/FFFFFF?text=Badge",
-          type: "image/png",
-        },
-      ],
-    },
-    {
-      title: "Machine Learning Specialization",
-      issuer: "Stanford University",
-      date: "2023",
-      image: "https://via.placeholder.com/300x200/A855F7/FFFFFF?text=ML+Certificate",
-      color: "from-purple-500 to-pink-500",
-      type: "Specialization",
-      documents: [
-        {
-          name: "ML Specialization Certificate.pdf",
-          url: "https://via.placeholder.com/600x400/A855F7/FFFFFF?text=ML+Certificate",
-          type: "application/pdf",
-        },
-        {
-          name: "Course 1 Certificate.pdf",
-          url: "https://via.placeholder.com/600x400/A855F7/FFFFFF?text=Course+1+Certificate",
-          type: "application/pdf",
-        },
-      ],
-    },
-    {
-      title: "React Developer Certification",
-      issuer: "Meta",
-      date: "2023",
-      image: "https://via.placeholder.com/300x200/10B981/FFFFFF?text=React+Certificate",
-      color: "from-green-500 to-emerald-500",
-      type: "Professional Certificate",
-      documents: [
-        {
-          name: "React Certificate.pdf",
-          url: "https://via.placeholder.com/600x400/10B981/FFFFFF?text=React+Certificate",
-          type: "application/pdf",
-        },
-        {
-          name: "Meta Badge.png",
-          url: "https://via.placeholder.com/300x300/10B981/FFFFFF?text=Meta+Badge",
-          type: "image/png",
-        },
-      ],
-    },
-    {
-      title: "AWS Cloud Practitioner",
-      issuer: "Amazon Web Services",
-      date: "2023",
-      image: "https://via.placeholder.com/300x200/F97316/FFFFFF?text=AWS+Certificate",
-      color: "from-orange-500 to-red-500",
-      type: "Cloud Certification",
-      documents: [
-        {
-          name: "AWS Certificate.pdf",
-          url: "https://via.placeholder.com/600x400/F97316/FFFFFF?text=AWS+Certificate",
-          type: "application/pdf",
-        },
-        {
-          name: "AWS Badge.png",
-          url: "https://via.placeholder.com/300x300/F97316/FFFFFF?text=AWS+Badge",
-          type: "image/png",
-        },
-      ],
-    },
-    {
-      title: "Python for Data Science",
-      issuer: "IBM",
-      date: "2022",
-      image: "https://via.placeholder.com/300x200/6366F1/FFFFFF?text=Python+Certificate",
-      color: "from-indigo-500 to-purple-500",
-      type: "Data Science",
-      documents: [
-        {
-          name: "Python Certificate.pdf",
-          url: "https://via.placeholder.com/600x400/6366F1/FFFFFF?text=Python+Certificate",
-          type: "application/pdf",
-        },
-        {
-          name: "IBM Badge.png",
-          url: "https://via.placeholder.com/300x300/6366F1/FFFFFF?text=IBM+Badge",
-          type: "image/png",
-        },
-      ],
-    },
-    {
-      title: "IoT Fundamentals",
-      issuer: "Cisco",
-      date: "2022",
-      image: "https://via.placeholder.com/300x200/14B8A6/FFFFFF?text=IoT+Certificate",
-      color: "from-teal-500 to-blue-500",
-      type: "Technology",
-      documents: [
-        {
-          name: "IoT Certificate.pdf",
-          url: "https://via.placeholder.com/600x400/14B8A6/FFFFFF?text=IoT+Certificate",
-          type: "application/pdf",
-        },
-        {
-          name: "Cisco Badge.png",
-          url: "https://via.placeholder.com/300x300/14B8A6/FFFFFF?text=Cisco+Badge",
-          type: "image/png",
-        },
-      ],
-    },
+    // {
+    //   title: "Full Stack Web Development",
+    //   issuer: "Coursera",
+    //   date: "2023",
+    //   image: "https://via.placeholder.com/300x200/3B82F6/FFFFFF?text=Full+Stack+Certificate",
+    //   color: "from-blue-500 to-cyan-500",
+    //   type: "Course Completion",
+    //   documents: [
+    //     {
+    //       name: "Certificate.pdf",
+    //       url: "https://via.placeholder.com/600x400/3B82F6/FFFFFF?text=Full+Stack+Certificate",
+    //       type: "application/pdf",
+    //     },
+    //     {
+    //       name: "Course Completion Badge.png",
+    //       url: "https://via.placeholder.com/300x300/3B82F6/FFFFFF?text=Badge",
+    //       type: "image/png",
+    //     },
+    //   ],
+    // },
+    // {
+    //   title: "Machine Learning Specialization",
+    //   issuer: "Stanford University",
+    //   date: "2023",
+    //   image: "https://via.placeholder.com/300x200/A855F7/FFFFFF?text=ML+Certificate",
+    //   color: "from-purple-500 to-pink-500",
+    //   type: "Specialization",
+    //   documents: [
+    //     {
+    //       name: "ML Specialization Certificate.pdf",
+    //       url: "https://via.placeholder.com/600x400/A855F7/FFFFFF?text=ML+Certificate",
+    //       type: "application/pdf",
+    //     },
+    //     {
+    //       name: "Course 1 Certificate.pdf",
+    //       url: "https://via.placeholder.com/600x400/A855F7/FFFFFF?text=Course+1+Certificate",
+    //       type: "application/pdf",
+    //     },
+    //   ],
+    // },
+    // {
+    //   title: "React Developer Certification",
+    //   issuer: "Meta",
+    //   date: "2023",
+    //   image: "https://via.placeholder.com/300x200/10B981/FFFFFF?text=React+Certificate",
+    //   color: "from-green-500 to-emerald-500",
+    //   type: "Professional Certificate",
+    //   documents: [
+    //     {
+    //       name: "React Certificate.pdf",
+    //       url: "https://via.placeholder.com/600x400/10B981/FFFFFF?text=React+Certificate",
+    //       type: "application/pdf",
+    //     },
+    //     {
+    //       name: "Meta Badge.png",
+    //       url: "https://via.placeholder.com/300x300/10B981/FFFFFF?text=Meta+Badge",
+    //       type: "image/png",
+    //     },
+    //   ],
+    // },
+    // {
+    //   title: "AWS Cloud Practitioner",
+    //   issuer: "Amazon Web Services",
+    //   date: "2023",
+    //   image: "https://via.placeholder.com/300x200/F97316/FFFFFF?text=AWS+Certificate",
+    //   color: "from-orange-500 to-red-500",
+    //   type: "Cloud Certification",
+    //   documents: [
+    //     {
+    //       name: "AWS Certificate.pdf",
+    //       url: "https://via.placeholder.com/600x400/F97316/FFFFFF?text=AWS+Certificate",
+    //       type: "application/pdf",
+    //     },
+    //     {
+    //       name: "AWS Badge.png",
+    //       url: "https://via.placeholder.com/300x300/F97316/FFFFFF?text=AWS+Badge",
+    //       type: "image/png",
+    //     },
+    //   ],
+    // },
+    // {
+    //   title: "Python for Data Science",
+    //   issuer: "IBM",
+    //   date: "2022",
+    //   image: "https://via.placeholder.com/300x200/6366F1/FFFFFF?text=Python+Certificate",
+    //   color: "from-indigo-500 to-purple-500",
+    //   type: "Data Science",
+    //   documents: [
+    //     {
+    //       name: "Python Certificate.pdf",
+    //       url: "https://via.placeholder.com/600x400/6366F1/FFFFFF?text=Python+Certificate",
+    //       type: "application/pdf",
+    //     },
+    //     {
+    //       name: "IBM Badge.png",
+    //       url: "https://via.placeholder.com/300x300/6366F1/FFFFFF?text=IBM+Badge",
+    //       type: "image/png",
+    //     },
+    //   ],
+    // },
+    // {
+    //   title: "IoT Fundamentals",
+    //   issuer: "Cisco",
+    //   date: "2022",
+    //   image: "https://via.placeholder.com/300x200/14B8A6/FFFFFF?text=IoT+Certificate",
+    //   color: "from-teal-500 to-blue-500",
+    //   type: "Technology",
+    //   documents: [
+    //     {
+    //       name: "IoT Certificate.pdf",
+    //       url: "https://via.placeholder.com/600x400/14B8A6/FFFFFF?text=IoT+Certificate",
+    //       type: "application/pdf",
+    //     },
+    //     {
+    //       name: "Cisco Badge.png",
+    //       url: "https://via.placeholder.com/300x300/14B8A6/FFFFFF?text=Cisco+Badge",
+    //       type: "image/png",
+    //     },
+    //   ],
+    // },
   ]
 
   return (

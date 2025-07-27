@@ -49,7 +49,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="py-16 sm:py-20 px-4 relative overflow-hidden bg-gradient-to-br from-slate-800/30 via-purple-800/20 to-indigo-800/30"
+      className="py-16 px-4 relative"
     >
       <div className="max-w-7xl mx-auto relative z-10">
         <ScrollReveal animation="fade-up">
@@ -82,7 +82,7 @@ const Skills = () => {
                       </div>
                       <h3 className="text-lg sm:text-xl font-bold text-white mb-2">{category.title}</h3>
                     </div>
-
+              
                     <div className="space-y-2 sm:space-y-3">
                       {category.skills.map((skill, skillIndex) => (
                         <ScrollReveal
@@ -134,6 +134,8 @@ const Skills = () => {
           </div>
         </ScrollReveal>
       </div>
+
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-800/40 via-purple-800/30 to-indigo-800/40"></div>
     </section>
   )
 }

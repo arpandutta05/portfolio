@@ -49,7 +49,7 @@ const Projects = () => {
         "Built PlantTribe, a MERN stack web platform that connects gardeners, farmers, and dealers. Features image-based plant disease detection, compost tracking, and voice-assisted guidance.",
       tech: ["MERN Stack", "Razorpay", "ML", "Voice Recognition"],
       image:
-        "https://via.placeholder.com/500x300/A855F7/FFFFFF?text=PlantTribe+Platform",
+        "https://planttribe.onrender.com/",
       liveDemo: "https://planttribe.onrender.com/",
       github: "https://github.com/arpandutta05/PlantTribe",
       color: "from-purple-500 to-pink-500",
@@ -60,10 +60,8 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="py-16 sm:py-20 px-4 relative overflow-hidden"
+      className="py-16 px-4 relative"
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-800/40 via-purple-800/30 to-indigo-800/40"></div>
-
       <div className="max-w-7xl mx-auto relative z-10">
         <ScrollReveal animation="fade-up">
           <div className="text-center mb-12 sm:mb-16">
@@ -81,7 +79,7 @@ const Projects = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
           {projects.map((project, index) => (
             <ScrollReveal key={index} animation="zoom-in" delay={index * 200}>
-              <Card className="group relative overflow-hidden hover:shadow-2xl transition-all duration-700 border-0 bg-white/5 backdrop-blur-lg border-white/10 hover:scale-105">
+              <Card className="group relative overflow-hidden hover:shadow-2xl transition-all duration-700 border-0 bg-transparent hover:scale-105">
                 {project.featured && (
                   <div className="absolute top-4 right-4 z-20">
                     <div

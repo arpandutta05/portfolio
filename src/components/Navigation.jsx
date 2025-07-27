@@ -34,7 +34,7 @@ const Navigation = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center py-2">
           <div className="flex items-center gap-2">
           
             {/* <Coffee className="w-6 h-6 text-amber-400" /> */}
@@ -85,3 +85,23 @@ const Navigation = () => {
 }
 
 export default Navigation
+
+// export const metadata = {
+//   title: "Arpan Dutta - Portfolio",
+//   description: "Welcome to my portfolio website. Explore my projects, skills, and experiences.",
+//   keywords: "Arpan Dutta, portfolio, web developer, projects, skills, achievements",
+//   author: "Arpan Dutta",
+//   viewport: "width=device-width, initial-scale=1.0",
+//   robots: "index, follow",
+//   "google-site-verification": "your-verification-code",
+//   "og:title": "Arpan Dutta - Portfolio",
+//   "og:description": "Welcome to my portfolio website. Explore my projects, skills, and experiences.",
+//   "og:image": "/path-to-your-image.jpg",
+//   "og:url": "https://yourwebsite.com",
+//   "twitter:card": "summary_large_image",
+//   "twitter:title": "Arpan Dutta - Portfolio",
+//   "twitter:description": "Welcome to my portfolio website. Explore my projects, skills, and experiences.",
+//   "twitter:image": "/path-to-your-image.jpg",
+// }
+
+// className="py-16 px-4 relative"

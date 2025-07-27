@@ -67,7 +67,7 @@ const Education = () => {
       // grade: "77%",
       year: "2020",
       status: "Completed",
-      image: "https://via.placeholder.com/400x300/F97316/FFFFFF?text=Secondary+School",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaXsYh3Zz9z1XNt7Vt6Gsz9qxIW90WjlH2gQ&s",
       color: "from-orange-500 to-red-500",
       // documents: [
       //   {
@@ -87,7 +87,7 @@ const Education = () => {
   return (
     <section
       id="education"
-      className="py-16 sm:py-20 px-4 bg-gradient-to-br from-slate-800/30 via-purple-800/20 to-indigo-800/30"
+      className="py-16 px-4 relative"
     >
       <div className="max-w-6xl mx-auto">
         <ScrollReveal animation="fade-up">

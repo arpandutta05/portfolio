@@ -14,6 +14,7 @@ import Navigation from "./components/Navigation"
 import MouseTrail from "./components/MouseTrail"
 import LoadingScreen from "./components/LoadingScreen"
 import Hackathons from "./components/Hackathons"
+import AnimatedBackground from "./components/AnimatedBackground"
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
@@ -25,11 +26,8 @@ function App() {
   return (
     <>
       {isLoading && <LoadingScreen onLoadingComplete={handleLoadingComplete} />}
-      <main
-        className={`min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-indigo-900 relative transition-opacity duration-500 ${
-          isLoading ? "opacity-0" : "opacity-100"
-        }`}
-      >
+      <main className="min-h-screen relative transition-opacity duration-500">
+        <AnimatedBackground />
         <MouseTrail />
         <Navigation />
         <Hero />
@@ -38,12 +36,12 @@ function App() {
         <Skills />
         <Projects />
         <Hackathons />
-        
         <Achievements />
         <Certificates />
-
         <Quotes />
-        <Contact />
+        <section id="SECTION_ID" className="bg-black/55 backdrop-blur-lg rounded-3xl shadow-6xl p-6 border border-blue/90">
+          <Contact />
+        </section>
       </main>
     </>
   )

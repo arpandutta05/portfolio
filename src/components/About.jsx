@@ -28,8 +28,6 @@ const About = () => {
 
   return (
     <section id="about" className="py-16 sm:py-20 px-4 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-800/50 via-purple-800/30 to-indigo-800/50"></div>
-
       <div className="max-w-6xl mx-auto relative z-10">
         <ScrollReveal animation="fade-up">
           <div className="text-center mb-12 sm:mb-16">
