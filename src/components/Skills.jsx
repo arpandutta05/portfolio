@@ -112,7 +112,7 @@ const Skills = () => {
         </div>
 
         <ScrollReveal animation="fade-up" delay={800}>
-          <div className="mt-12 sm:mt-16 relative h-24 sm:h-32 overflow-hidden">
+          <div className="mt-12 sm:mt-16 relative h-24 sm:h-32 ">
             <div className="absolute inset-0 flex items-center">
               <div className="flex animate-scroll-left space-x-4 sm:space-x-6">
                 {[...Array(3)].map((_, repeatIndex) => (
@@ -135,7 +135,7 @@ const Skills = () => {
         </ScrollReveal>
       </div>
 
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-800/40 via-purple-800/30 to-indigo-800/40"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-800/40 via-purple-800/30 to-indigo-800/40py-16 px-4 relative"></div>
     </section>
   )
 }
