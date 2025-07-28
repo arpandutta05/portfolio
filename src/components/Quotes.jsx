@@ -49,7 +49,7 @@ const Quotes = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentQuote((prev) => (prev + 1) % quotes.length)
-    }, 4000)
+    }, 1400)
 
     return () => clearInterval(interval)
   }, [quotes.length])
