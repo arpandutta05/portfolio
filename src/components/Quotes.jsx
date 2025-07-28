@@ -58,7 +58,7 @@ const Quotes = () => {
   const IconComponent = currentQuoteData.icon
 
   return (
-    <section className="py-16 sm:py-20 px-4 relative overflow-hidden">
+    <section className="py-16 px-4 relative">
       <div className="py-16 px-4 relative"></div>
 
       <div className="max-w-4xl mx-auto relative z-10">

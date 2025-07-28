@@ -5,7 +5,8 @@ import DocumentViewer from "./DocumentViewer"
 const Education = () => {
   const education = [
     {
-      degree: "B.Tech in Computer Science & Engineering",
+      degree: "Bachelor of Technology in",
+      new: "Computer Science & Engineering",
       institution: "JIS College of Engineering, Kalyani",
       // grade: "6.91 CGPA (Till 5th Sem)",
       year: "2022-2026",
@@ -39,7 +40,7 @@ const Education = () => {
       degree: "Higher Secondary",
       institution: "Basirhat Town High School (WBCHSE)",
       // grade: "81%",
-      year: "2022",
+      year: "2020 - 2022",
       status: "Completed",
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiBh9i-TmILlP1F9ae1QkhYzQ7oFKbRIBD4w&s",
       color: "from-green-500 to-blue-500",
@@ -65,7 +66,7 @@ const Education = () => {
       degree: "Secondary",
       institution: "Rampur P.D.S.S. Niketan (WBBSE)",
       // grade: "77%",
-      year: "2020",
+      year: "2014 - 2020",
       status: "Completed",
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaXsYh3Zz9z1XNt7Vt6Gsz9qxIW90WjlH2gQ&s",
       color: "from-orange-500 to-red-500",
@@ -129,6 +130,12 @@ const Education = () => {
                           <div className="flex items-center gap-2 text-gray-400">
                             <Calendar className="w-4 h-4 sm:w-5 sm:h-5" />
                             <span className="font-medium text-sm sm:text-base">{edu.year}</span>
+                          </div>
+                        </div>
+
+                        <div className="flex-1">
+                          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-3 sm:mb-4">
+                          <p className="text-xl sm:text-2xl font-bold text-white mb-2 lg:mb-0">{edu.new}</p>
                           </div>
                         </div>
 

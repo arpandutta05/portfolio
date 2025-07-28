@@ -78,7 +78,10 @@ const Contact = () => {
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-cyan-400 mx-auto rounded-full"></div>
             <p className="text-lg sm:text-xl text-gray-300 mt-6 max-w-2xl mx-auto">
-              Ready to collaborate on exciting projects or discuss new opportunities? I'd love to hear from you!
+              Ready to collaborate on exciting projects or discuss new opportunities?!
+              <p>
+              I'd love to hear from you!!
+              </p>
             </p>
           </div>
         </ScrollReveal>
@@ -136,7 +139,7 @@ const Contact = () => {
           <div className="text-center">
             <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 sm:p-12 border border-white/20 hover:scale-105 transition-all duration-500">
               <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6">
-                Ready to Start Something Amazing?
+                Ready to Start Something Amazing?!
               </h3>
               <p className="text-lg sm:text-xl text-gray-300 mb-6 sm:mb-8 max-w-2xl mx-auto">
                 Whether you have a project in mind, want to collaborate, or just want to say hello, I'm always excited
@@ -168,34 +171,34 @@ const Contact = () => {
                 >
                   <input
                     type="text"
-                    name="name"
-                    placeholder="Your Name"
+                    name="Name"
+                    placeholder="Your Name : "
                     required
                     className="p-3 rounded-md bg-white/10 border border-white/20 text-white placeholder-gray-300"
                   />
                   <input
                     type="tel"
-                    name="phone"
-                    placeholder="Mobile No"
+                    name="Phone No"
+                    placeholder="Mobile No : "
                     className="p-3 rounded-md bg-white/10 border border-white/20 text-white placeholder-gray-300"
                   />
                   <input
                     type="email"
-                    name="email"
-                    placeholder="Mail"
+                    name="Mail"
+                    placeholder="Mail ID :"
                     required
                     className="p-3 rounded-md bg-white/10 border border-white/20 text-white placeholder-gray-300"
                   />
                   <input
                     type="text"
-                    name="reason"
-                    placeholder="Reason"
+                    name="Feedback / Reason"
+                    placeholder="Feedback / Reason :"
                     className="p-3 rounded-md bg-white/10 border border-white/20 text-white placeholder-gray-300"
                   />
                   <textarea
-                    name="message"
+                    name="Message"
                     rows={4}
-                    placeholder="Message"
+                    placeholder="Message :"
                     required
                     className="p-3 rounded-md bg-white/10 border border-white/20 text-white placeholder-gray-300"
                   ></textarea>
@@ -209,7 +212,7 @@ const Contact = () => {
         </ScrollReveal>
 
         <ScrollReveal animation="fade-up" delay={900}>
-          <div className="text-center mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-white/20">
+          <div className="text-center mt-6 sm:mt-12 pt-6 sm:pt-6 border-t border-white/20">
             <p className="text-gray-400 text-sm sm:text-base">© 2025 - &lt;Arpan Dutta /&gt; Crafted with ❤️ and lots of ☕</p>
           </div>
         </ScrollReveal>
