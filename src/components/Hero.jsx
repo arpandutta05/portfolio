@@ -15,13 +15,50 @@ const Hero = () => {
     return () => window.removeEventListener("mousemove", handleMouseMove)
   }, [])
 
+  const fullText = "Hii,, I'm Arpan Dutta...."
+  const [typedText, setTypedText] = useState("")
+
+  useEffect(() => {
+    let i = 0
+    let typingTimeout
+
+    const typeText = () => {
+      if (i <= fullText.length) {
+        setTypedText(fullText.slice(0, i))
+        i++
+        typingTimeout = setTimeout(typeText, 100)
+      } else {
+        setTimeout(() => {
+          i = 0
+          setTypedText("")
+          typeText()
+        }, 10000)
+      }
+    }
+
+    typeText()
+
+    return () => clearTimeout(typingTimeout)
+  }, [])
+  // Rotating roles
+  const roles = [
+    { text: "Full Stack Developer", gradient: "from-purple-400 to-pink-400" },
+    { text: "AI Enthusiast", gradient: "from-cyan-400 to-blue-400" },
+    { text: "IoT Explorer", gradient: "from-amber-400 to-orange-400" },
+  ];
+  const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentRoleIndex((prev) => (prev + 1) % roles.length);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
+
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center px-4 py-20 relative overflow-hidden">
-      <div className="py-16 px-4 relative">
-        {/* <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-2000"></div>
-        <div className="absolute top-40 left-40 w-80 h-80 bg-gradient-to-br from-amber-500 to-orange-500 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-4000"></div> */}
-      </div>
+      <div className="py-16 px-4 relative"></div>
 
       <div className="absolute inset-0">
         {[...Array(30)].map((_, i) => (
@@ -67,9 +104,9 @@ const Hero = () => {
           </div>
 
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6 animate-gradient bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
-            Hii,, I'm Arpan Dutta....
+            {typedText}
+            <span className="animate-blink">|</span>
           </h1>
-          
 
           <div className="text-xl sm:text-2xl lg:text-3xl text-gray-300 mb-8 animate-fade-in-up animation-delay-300">
             <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent font-semibold">
@@ -97,44 +134,36 @@ const Hero = () => {
           <Button variant="outline" size="sm" className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border-purple-400/30 hover:border-purple-400 hover:bg-purple-500/20 text-white transition-all duration-300">
             <a href="tel:+919547835404" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">
               <Phone className="w-4 h-4 text-purple-400" />
-              {/* <span className="hidden sm:inline">Call</span> */}
-              {/* <span className="sm:hidden">Call</span> */}
             </a>
           </Button>
 
           <Button variant="outline" size="sm" className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border-cyan-400/30 hover:border-cyan-400 hover:bg-cyan-500/20 text-white transition-all duration-300">
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=arpandutta.in@gmail.com" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">
               <Mail className="w-4 h-4 text-cyan-400" />
-              {/* <span className="hidden sm:inline">Gmail</span> */}
-              {/* <span className="sm:hidden">Mail</span> */}
             </a>
           </Button>
 
           <Button variant="outline" size="sm" className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border-pink-400/30 hover:border-pink-400 hover:bg-pink-500/20 text-white transition-all duration-300">
             <a href="https://linkedin.com/in/arpandutta2k26" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">
               <Linkedin className="w-4 h-4 text-pink-400" />
-              {/* <span className="hidden sm:inline">LinkedIn</span> */}
             </a>
           </Button>
 
           <Button variant="outline" size="sm" className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border-green-400/30 hover:border-green-400 hover:bg-green-500/20 text-white transition-all duration-300">
             <a href="https://github.com/arpandutta05" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">
               <Github className="w-4 h-4 text-green-400" />
-              {/* <span className="hidden sm:inline">GitHub</span> */}
             </a>
           </Button>
 
           <Button variant="outline" size="sm" className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border-pink-400/30 hover:border-pink-400 hover:bg-pink-500/20 text-white transition-all duration-300">
             <a href="https://www.instagram.com/romio.arpan/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">
               <Instagram className="w-4 h-4 text-pink-400" />
-              {/* <span className="hidden sm:inline">Instagram</span> */}
             </a>
           </Button>
 
           <Button variant="outline" size="sm" className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border-sky-400/30 hover:border-sky-400 hover:bg-sky-500/20 text-white transition-all duration-300">
             <a href="https://x.com/romioarpan" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">
               <Twitter className="w-4 h-4 text-sky-400" />
-              {/* <span className="hidden sm:inline">X</span> */}
             </a>
           </Button>
         </div>

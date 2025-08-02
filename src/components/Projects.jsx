@@ -44,12 +44,13 @@ const Projects = () => {
       featured: true,
     },
     {
+      
       title: "PlantTribe - Smart Gardening Platform",
       description:
         "Built PlantTribe, a MERN stack web platform that connects gardeners, farmers, and dealers. Features image-based plant disease detection, compost tracking, and voice-assisted guidance.",
       tech: ["MERN Stack", "Razorpay", "ML", "Voice Recognition"],
       image:
-        "https://planttribe.onrender.com/",
+        "img/PlantTribe.png",
       liveDemo: "https://planttribe.onrender.com/",
       github: "https://github.com/arpandutta05/PlantTribe",
       color: "from-purple-500 to-pink-500",
@@ -100,36 +101,6 @@ const Projects = () => {
                   <div
                     className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-20 group-hover:opacity-30 transition-opacity duration-300`}
                   ></div>
-
-                  <div className="absolute inset-0 flex items-center justify-center gap-3 sm:gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <a
-                      href={project.liveDemo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Button
-                        size="sm"
-                        className="bg-white/90 text-gray-900 hover:bg-white shadow-lg text-xs sm:text-sm transform hover:scale-110 transition-all duration-200"
-                      >
-                        <Zap className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
-                        Explore
-                      </Button>
-                    </a>
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Button
-                        size="sm"
-                        variant="outline"
-                        className="bg-white/90 border-white text-gray-900 hover:bg-white shadow-lg text-xs sm:text-sm transform hover:scale-110 transition-all duration-200"
-                      >
-                        <Github className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
-                        Code
-                      </Button>
-                    </a>
-                  </div>
                 </div>
 
                 <CardHeader className="pb-3 sm:pb-4">
@@ -142,6 +113,7 @@ const Projects = () => {
                 </CardHeader>
 
                 <CardContent className="pt-0">
+                  {/* Tech badges */}
                   <div className="flex flex-wrap gap-2 mb-4 sm:mb-6">
                     {project.tech.map((tech, techIndex) => (
                       <span
@@ -152,7 +124,39 @@ const Projects = () => {
                       </span>
                     ))}
                   </div>
-
+                  {/* Buttons under description */}
+                  <div className="flex gap-2 sm:gap-3 mb-4">
+                    <a
+                      href={project.liveDemo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1"
+                    >
+                      <Button
+                        size="sm"
+                        className={`w-full bg-gradient-to-r ${project.color} hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-white text-xs sm:text-sm`}
+                      >
+                        <Zap className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
+                        Explore
+                      </Button>
+                    </a>
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1"
+                    >
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className="w-full bg-white/90 border-white text-gray-900 hover:bg-white shadow-lg text-xs sm:text-sm transform hover:scale-105 transition-all duration-300"
+                      >
+                        <Github className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
+                        Code
+                      </Button>
+                    </a>
+                  </div>
+                  
                   <DocumentViewer
                     documents={project.documents}
                     title={project.title}
