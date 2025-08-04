@@ -36,8 +36,8 @@ function App() {
         <Skills />
         <Projects />
         <Hackathons />
-        <Achievements />
-        <Certificates />
+         <Achievements /> 
+        <Certificates /> 
         <Quotes />
         <section id="SECTION_ID" className="bg-black/55 backdrop-blur-lg rounded-3xl shadow-6xl p-6 border border-blue/90">
           <Contact />

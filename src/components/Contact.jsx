@@ -1,9 +1,9 @@
-import { Mail, Phone, Linkedin, Github, MapPin, Send, LucideInstagram, InstagramIcon, X, TwitterIcon } from "lucide-react"
+import { Mail, Phone, Linkedin, Github, MapPin, Send } from "lucide-react"
 import { useState } from "react"
 import { Button } from "./ui/Button"
 import { Card, CardContent } from "./ui/Card"
 import ScrollReveal from "./ScrollReveal"
-import { Instagram, Twitter } from "react-feather"
+import { Instagram } from "react-feather"
 
 const Contact = () => {
   const [showForm, setShowForm] = useState(false)
@@ -62,67 +62,67 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-16 px-4 relative"
+      className="py-10 sm:py-12 md:py-16 px-4 sm:px-6 md:px-8 relative overflow-hidden"
     >
-      <div className="absolute inset-0">
-        <div className="absolute top-20 left-20 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
-        <div className="absolute top-40 right-20 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
-        <div className="absolute -bottom-8 left-40 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
+      {/* Background blobs with responsive positioning and sizing */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-[10%] left-[5%] sm:top-20 sm:left-20 w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
+        <div className="absolute top-[30%] right-[5%] sm:top-40 sm:right-20 w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
+        <div className="absolute -bottom-8 left-[10%] sm:left-40 w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
       </div>
 
       <div className="max-w-6xl mx-auto relative z-10">
+        {/* Section Header */}
         <ScrollReveal animation="fade-up">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-white via-purple-200 to-cyan-200 bg-clip-text text-transparent">
+          <div className="text-center mb-8 sm:mb-12 md:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 bg-gradient-to-r from-white via-purple-200 to-cyan-200 bg-clip-text text-transparent">
               Let's Connect
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-cyan-400 mx-auto rounded-full"></div>
-            <p className="text-lg sm:text-xl text-gray-300 mt-6 max-w-2xl mx-auto">
+            <div className="w-16 sm:w-20 md:w-24 h-1 bg-gradient-to-r from-purple-400 to-cyan-400 mx-auto rounded-full"></div>
+            <p className="text-base sm:text-lg md:text-xl text-gray-300 mt-4 sm:mt-6 max-w-2xl mx-auto px-2">
               Ready to collaborate on exciting projects or discuss new opportunities?!
-              <p>
-              I'd love to hear from you!!
-              </p>
+              <span className="block mt-1 sm:mt-2">
+                I'd love to hear from you!!
+              </span>
             </p>
           </div>
         </ScrollReveal>
 
+        {/* Location Card */}
         <ScrollReveal animation="zoom-in" delay={200}>
-          <div className="text-center mb-8 sm:mb-12">
+          <div className="text-center mb-6 sm:mb-8 md:mb-12">
             <Card className="inline-block bg-white/10 backdrop-blur-lg border-white/20 text-white hover:scale-105 transition-all duration-300">
-              <CardContent className="p-4 sm:p-6">
-                <div className="flex items-center gap-3">
+              <CardContent className="p-3 sm:p-4 md:p-6">
+                <div className="flex items-center gap-2 sm:gap-3">
                   <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-purple-400" />
-                  <span className="text-base sm:text-lg">Kalyani, West Bengal, India</span>
+                  <span className="text-sm sm:text-base md:text-lg">Kalyani, West Bengal, India</span>
                 </div>
               </CardContent>
             </Card>
           </div>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16">
+        {/* Contact Info Cards - Responsive Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 md:gap-6 mb-8 sm:mb-12 md:mb-16">
           {contactInfo.map((contact, index) => {
             const IconComponent = contact.icon
             return (
               <ScrollReveal key={index} animation="fade-up" delay={300 + index * 100}>
                 <Card className="group hover:shadow-2xl transition-all duration-700 border-0 bg-white/10 backdrop-blur-lg border-white/20 hover:scale-105">
-                  <CardContent className="p-6 sm:p-8">
-                    <div className="flex items-center gap-4 sm:gap-6">
+                  <CardContent className="p-4 sm:p-6 md:p-8">
+                    <div className="flex items-center gap-3 sm:gap-4 md:gap-6">
                       <div
-                        className={`bg-gradient-to-br ${contact.color} p-3 sm:p-4 rounded-2xl shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-300`}
+                        className={`bg-gradient-to-br ${contact.color} p-2 sm:p-3 md:p-4 rounded-xl sm:rounded-2xl shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-300`}
                       >
-                        <IconComponent className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
+                        <IconComponent className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-white" />
                       </div>
                       <div className="flex-1 min-w-0">
-                        <h3 className="text-lg sm:text-xl font-bold text-white mb-2">{contact.label}</h3>
+                        <h3 className="text-base sm:text-lg md:text-xl font-bold text-white mb-1 sm:mb-2">{contact.label}</h3>
                         <a
                           href={contact.href}
-                          className={`text-gray-300 hover:text-transparent hover:bg-gradient-to-r hover:${contact.color} hover:bg-clip-text transition-all duration-300 text-base sm:text-lg break-all`}
-                          target={contact.label === "LinkedIn" || contact.label === "GitHub" ? "_blank" : undefined}
-                          rel={
-                            contact.label === "LinkedIn" || contact.label === "GitHub"
-                              ? "noopener noreferrer"
-                              : undefined
-                          }
+                          className={`text-gray-300 hover:text-transparent hover:bg-gradient-to-r hover:${contact.color} hover:bg-clip-text transition-all duration-300 text-sm sm:text-base md:text-lg break-all`}
+                          target={contact.label !== "Phone" && contact.label !== "Mail" ? "_blank" : undefined}
+                          rel="noopener noreferrer"
                         >
                           {contact.value}
                         </a>
@@ -135,72 +135,74 @@ const Contact = () => {
           })}
         </div>
 
+        {/* Call-to-action Card */}
         <ScrollReveal animation="zoom-in" delay={700}>
           <div className="text-center">
-            <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 sm:p-12 border border-white/20 hover:scale-105 transition-all duration-500">
-              <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6">
+            <div className="bg-white/10 backdrop-blur-lg rounded-xl sm:rounded-2xl md:rounded-3xl p-5 sm:p-8 md:p-12 border border-white/20 hover:scale-[1.02] transition-all duration-500">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-3 sm:mb-4 md:mb-6">
                 Ready to Start Something Amazing?!
               </h3>
-              <p className="text-lg sm:text-xl text-gray-300 mb-6 sm:mb-8 max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-4 sm:mb-6 md:mb-8 max-w-2xl mx-auto">
                 Whether you have a project in mind, want to collaborate, or just want to say hello, I'm always excited
                 to connect with fellow developers and innovators.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                 <Button
                   size="lg"
                   onClick={() => setShowForm(!showForm)}
-                  className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+                  className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 w-full sm:w-auto"
                 >
-                  <Send className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
+                  <Send className="w-4 h-4 mr-2" />
                   Send Message
                 </Button>
                 <a
                   href="tel:9547835404"
-                  className="flex items-center justify-center px-6 py-2 border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/50 rounded-lg transform hover:scale-105 transition-all duration-300"
+                  className="flex items-center justify-center px-4 sm:px-6 py-2 border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/50 rounded-lg transform hover:scale-105 transition-all duration-300 w-full sm:w-auto"
                 >
-                  <Phone className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
+                  <Phone className="w-4 h-4 mr-2" />
                   Schedule Call
                 </a>
               </div>
 
+              {/* Responsive Form */}
               {showForm && (
                 <form
                   action="https://formspree.io/f/xovldvqk"
                   method="POST"
-                  className="mt-8 grid gap-4 text-left"
+                  className="mt-6 sm:mt-8 grid gap-3 sm:gap-4 text-left max-w-2xl mx-auto"
                 >
                   <input
                     type="text"
                     name="Name"
                     placeholder="Your Name : "
                     required
-                    className="p-3 rounded-md bg-white/10 border border-white/20 text-white placeholder-gray-300"
+                    className="p-2 sm:p-3 text-sm sm:text-base rounded-md bg-white/10 border border-white/20 text-white placeholder-gray-300"
                   />
                   <input
                     type="tel"
                     name="Phone No"
                     placeholder="Mobile No : "
-                    className="p-3 rounded-md bg-white/10 border border-white/20 text-white placeholder-gray-300"
+                    className="p-2 sm:p-3 text-sm sm:text-base rounded-md bg-white/10 border border-white/20 text-white placeholder-gray-300"
                   />
                   <input
                     type="email"
                     name="Mail"
                     placeholder="Mail ID :"
                     required
-                    className="p-3 rounded-md bg-white/10 border border-white/20 text-white placeholder-gray-300"
+                    className="p-2 sm:p-3 text-sm sm:text-base rounded-md bg-white/10 border border-white/20 text-white placeholder-gray-300"
                   />
                   <input
                     type="text"
                     name="Feedback / Reason"
                     placeholder="Feedback / Reason :"
-                    className="p-3 rounded-md bg-white/10 border border-white/20 text-white placeholder-gray-300"
+                    className="p-2 sm:p-3 text-sm sm:text-base rounded-md bg-white/10 border border-white/20 text-white placeholder-gray-300"
                   />
                   <textarea
                     name="Message"
                     rows={4}
                     placeholder="Message :"
                     required
-                    className="p-3 rounded-md bg-white/10 border border-white/20 text-white placeholder-gray-300"
+                    className="p-2 sm:p-3 text-sm sm:text-base rounded-md bg-white/10 border border-white/20 text-white placeholder-gray-300"
                   ></textarea>
                   <Button className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
                     Submit
@@ -211,9 +213,10 @@ const Contact = () => {
           </div>
         </ScrollReveal>
 
+        {/* Footer */}
         <ScrollReveal animation="fade-up" delay={900}>
-          <div className="text-center mt-6 sm:mt-12 pt-6 sm:pt-6 border-t border-white/20">
-            <p className="text-gray-400 text-sm sm:text-base">© 2025 - &lt;Arpan Dutta /&gt; Crafted with ❤️ and lots of ☕</p>
+          <div className="text-center mt-6 sm:mt-10 md:mt-12 pt-4 sm:pt-6 border-t border-white/20">
+            <p className="text-gray-400 text-xs sm:text-sm md:text-base">© 2025 - &lt;Arpan Dutta /&gt; Crafted with ❤️ and lots of ☕</p>
           </div>
         </ScrollReveal>
       </div>
