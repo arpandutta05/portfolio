@@ -13,6 +13,8 @@ const ScrollReveal = ({ children, animation = "fade-up", delay = 0, className = 
           setTimeout(() => {
             setIsVisible(true)
           }, delay)
+        } else {
+          setIsVisible(false) // <-- Reset when out of view
         }
       },
       {
@@ -46,8 +48,6 @@ const ScrollReveal = ({ children, animation = "fade-up", delay = 0, className = 
         return `${baseClasses} ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-105"}`
       case "rotate-in":
         return `${baseClasses} ${isVisible ? "opacity-100 rotate-0" : "opacity-0 rotate-12"}`
-      case "slide-up":
-        return `${baseClasses} ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"}`
       default:
         return `${baseClasses} ${isVisible ? "opacity-100" : "opacity-0"}`
     }
