@@ -36,7 +36,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex justify-between items-center py-2">
           <div className="flex items-center gap-2">
-            <div className="text-xl font-bold bg-gradient-to-r from-amber-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
+            <div className="text-xl font-bold bg-gradient-to-r from-amber-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent whitespace-nowrap">
               &lt;Arpan Dutta /&gt;
             </div>
           </div>
@@ -47,7 +47,7 @@ const Navigation = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-300 hover:text-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:to-cyan-400 hover:bg-clip-text transition-all duration-300 font-medium relative group px-2 py-1"
+                className="text-gray-300 hover:text-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:to-cyan-400 hover:bg-clip-text transition-all duration-300 font-medium relative group px-2 py-1 whitespace-nowrap"
               >
                 {item.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-400 to-cyan-400 group-hover:w-full transition-all duration-300"></span>
@@ -74,7 +74,7 @@ const Navigation = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="block py-3 text-gray-300 hover:text-purple-400 hover:bg-purple-500/10 transition-all duration-200 rounded"
+                className="block py-3 text-gray-300 hover:text-purple-400 hover:bg-purple-500/10 transition-all duration-200 rounded whitespace-nowrap"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
