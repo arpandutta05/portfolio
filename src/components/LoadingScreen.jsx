@@ -62,7 +62,7 @@ const LoadingScreen = ({ onLoadingComplete }) => {
           <div className="absolute inset-0 bg-gradient-to-br from-purple-500 via-pink-500 to-cyan-500 rounded-full animate-spin-slow p-1">
             <div className="w-full h-full bg-slate-900 rounded-full flex items-center justify-center">
               <div className="text-lg sm:text-4xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
-                AD
+                 <img src="gif/loading.gif" alt="Loading" className="w-16 h-16 sm:w-32 sm:h-32" />
               </div>
             </div>
           </div>

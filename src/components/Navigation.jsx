@@ -42,7 +42,7 @@ const Navigation = () => {
           </div>
 
           {/* Desktop navigation */}
-          <div className="hidden md:flex space-x-4 lg:space-x-1">
+          <div className="hidden md:flex space-x-1 lg:space-x-1"> 
             {navItems.map((item) => (
               <a
                 key={item.name}
@@ -57,7 +57,7 @@ const Navigation = () => {
 
           {/* Hamburger menu for mobile */}
           <button
-            className="md:hidden text-white hover:text-purple-400 transition-colors duration-200 p-2 pr-2 flex items-center justify-center"
+            className="md:hidden text-white hover:text-purple-400 transition-colors duration-200 p-2 pr-2 flex items-center justify-center whitespace-nowrap"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle navigation"
           >
@@ -68,8 +68,8 @@ const Navigation = () => {
 
       {/* Mobile navigation (fixed + aligned inside container) */}
       {isOpen && (
-        <div className="md:hidden fixed top-14 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-lg shadow-2xl border-b border-purple-500/20 max-h-[80vh] overflow-y-auto">
-          <div className="max-w-7xl mx-auto px-10 md:px-6 lg:px-80">
+        <div className="md:hidden fixed top-14 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-lg shadow-2xl border-b border-purple-500/20 max-h-[80vh] overflow-y-auto whitespace-nowrap">
+          <div className="max-w-7xl mx-auto px-10 md:px-6 lg:px-80 whitespace-nowrap">
             {navItems.map((item) => (
               <a
                 key={item.name}
