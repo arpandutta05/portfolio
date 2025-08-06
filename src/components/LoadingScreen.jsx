@@ -39,13 +39,27 @@ const LoadingScreen = ({ onLoadingComplete }) => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center overflow-hidden">
       {/* Background Image with Shadow Overlay */}
-      <div
+      {/* <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: "url('https://media.istockphoto.com/id/1401568968/vector/blue-matrix-background-abstract-binary-code-wallpaper-template-for-hackathon-and-other.jpg?s=612x612&w=0&k=20&c=7WQvXlYcGvriTqRg-bQENTqDTISNnmOB5pSeprNqGBQ=')",
           filter: "brightness(0.3)",
         }}
-      />
+      /> */}
+
+{/* Video Background with Shadow Overlay */}
+<video
+  className="absolute inset-0 w-full h-full object-cover z-0"
+  autoPlay
+  loop
+  muted
+  playsInline
+  style={{ filter: "brightness(0.4)" }}
+>
+  <source src="gif/binary.mp4" type="video/mp4" />
+</video>
+<div className="absolute inset-0 bg-black opacity-30" /> {/* Overlay to darken video if needed */}
+
       <div className="absolute inset-0 bg-black opacity-40" />
 
       {/* Blobs */}
