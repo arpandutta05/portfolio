@@ -54,13 +54,13 @@ const LoadingScreen = ({ onLoadingComplete }) => {
   loop
   muted
   playsInline
-  style={{ filter: "brightness(0.9)" }}
+  style={{ filter: "brightness(0.4)" }}
 >
-  <source src="gif/binary.mp4" type="video/mp4" />
+  <source src="public/gif/binary.mp4" type="video/mp4" />
 </video>
-<div className="absolute inset-0 bg-black opacity-70" /> {/* Overlay to darken video if needed */}
+<div className="absolute inset-0 bg-black opacity-30" /> {/* Overlay to darken video if needed */}
 
-      <div className="absolute inset-0 bg-black opacity-50" />
+      <div className="absolute inset-0 bg-black opacity-60" />
 
       {/* Blobs */}
       <div className="absolute w-full h-full pointer-events-none">
