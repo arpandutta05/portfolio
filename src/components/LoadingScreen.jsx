@@ -58,7 +58,7 @@ const LoadingScreen = ({ onLoadingComplete }) => {
 >
   <source src="gif/binary.mp4" type="video/mp4" />
 </video>
-<div className="absolute inset-0 bg-black opacity-30" /> {/* Overlay to darken video if needed */}
+<div className="absolute inset-0 bg-black opacity-60" /> {/* Overlay to darken video if needed */}
 
       <div className="absolute inset-0 bg-black opacity-60" />
 
