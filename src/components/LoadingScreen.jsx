@@ -80,10 +80,10 @@ const LoadingScreen = ({ onLoadingComplete }) => {
               </div>
             </div>
           </div>
-          <div className="absolute -top-2 -right-2 bg-gradient-to-r from-amber-400 to-orange-500 rounded-full p-2 animate-bounce">
+          {/* <div className="absolute -top-2 -right-2 bg-gradient-to-r from-amber-400 to-orange-500 rounded-full p-2 animate-bounce">
             <Coffee className="w-4 h-4 text-white" />
-          </div>
-          <Sparkles className="absolute -bottom-1 -left-1 w-6 h-6 text-yellow-400 animate-pulse" />
+          </div> */}
+          {/* <Sparkles className="absolute -bottom-1 -left-1 w-6 h-6 text-yellow-400 animate-pulse" /> */}
         </div>
 
         {/* Loading Text */}
@@ -107,7 +107,7 @@ const LoadingScreen = ({ onLoadingComplete }) => {
         </div>
 
         {/* Floating Icons */}
-        <div className="absolute inset-0 pointer-events-none">
+        {/* <div className="absolute inset-0 pointer-events-none">
           {[...Array(8)].map((_, i) => (
             <div
               key={i}
@@ -128,7 +128,7 @@ const LoadingScreen = ({ onLoadingComplete }) => {
               )}
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   )
