@@ -43,7 +43,7 @@ const LoadingScreen = ({ onLoadingComplete }) => {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: "url('https://media.istockphoto.com/id/1401568968/vector/blue-matrix-background-abstract-binary-code-wallpaper-template-for-hackathon-and-other.jpg?s=612x612&w=0&k=20&c=7WQvXlYcGvriTqRg-bQENTqDTISNnmOB5pSeprNqGBQ=')",
-          filter: "brightness(0.3)",
+          filter: "brightness(0.2)",
         }}
       />
 
@@ -58,9 +58,9 @@ const LoadingScreen = ({ onLoadingComplete }) => {
 >
   <source src="gif/binary.mp4" type="video/mp4" />
 </video>
-<div className="absolute inset-0 bg-black opacity-60" /> {/* Overlay to darken video if needed */}
+<div className="absolute inset-0 bg-black opacity-40" /> {/* Overlay to darken video if needed */}
 
-      <div className="absolute inset-0 bg-black opacity-60" />
+      <div className="absolute inset-0 bg-black opacity-40" />
 
       {/* Blobs */}
       <div className="absolute w-full h-full pointer-events-none">

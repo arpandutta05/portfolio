@@ -62,7 +62,7 @@ const DocumentViewer = ({ documents, title }) => {
                     <Button
                       size="sm"
                       variant="ghost"
-                      className="h-7 px-2 text-xs text-gray-400 hover:text-white hover:bg-white/10"
+                      className="h-7 px-0 text-xs text-gray-400 hover:text-white hover:bg-white/10"
                       onClick={() => openDocument(doc)}
                     >
                       <Eye className="w-3 h-3" />
@@ -78,7 +78,7 @@ const DocumentViewer = ({ documents, title }) => {
                         link.click()
                       }}
                     >
-                      <Download className="w-3 h-3" />
+                      <Download className="w-4 h-4" />
                     </Button>
                   </div>
                 </div>

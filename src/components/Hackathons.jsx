@@ -2,16 +2,18 @@ import { useEffect, useRef, useState } from "react";
 import { Github, Video, Link as LinkIcon } from "lucide-react";
 
 const hackathons = [
-	// {
-	// 	title: "Binary",
-	// 	location: "Kalyani, Nadia",
-	// 	description:
-	// 		"Developed GestureSlide — interactive gesture-based presentation tool with a dashboard and real-time annotations.",
-	// 	links: [
-	// 		{ label: "Github", url: "#", icon: <Github className="w-4 h-4 mr-1" /> },
-	// 		{ label: "Video", url: "#", icon: <Video className="w-4 h-4 mr-1" /> },
-	// 	],
-	// },
+	{
+		title: "Binary",
+		location: "Kalyani, Nadia",
+		date: "2024",
+		team: "Quantum Minds",
+		description:
+			"Smart Packaging System with IoT and AI for real-time tracking and security.",
+		links: [
+			{ label: "Github", url: "#", icon: <Github className="w-4 h-4 mr-1" /> },
+			{ label: "Video", url: "#", icon: <Video className="w-4 h-4 mr-1" /> },
+		],
+	},
 	// {
 	// 	title: "StatusCode1",
 	// 	location: "Kolkata, West Bengal",
@@ -85,6 +87,8 @@ function HackathonCard({ hackathon, isActive }) {
 			<div className="absolute top-[-58px] left-1/2 transform -translate-x-1/2 h-14 w-1 bg-gradient-to-b from-emerald-400 to-indigo-500" />
 			<h3 className="text-xl font-bold text-emerald-300 mb-2 text-center">{hackathon.title}</h3>
 			<p className="text-sm text-violet-300 italic mb-3 text-center">{hackathon.location}</p>
+			<p className="text-sm text-violet-300 italic mb-3 text-center">{hackathon.date}</p>
+			<p className="text-sm text-violet-300 italic mb-3 text-center">{hackathon.team}</p>
 			<p className="text-sm text-purple-100 mb-4 text-center">{hackathon.description}</p>
 			<div className="flex flex-wrap gap-2 justify-center">
 				{hackathon.links.map((link, i) => (
