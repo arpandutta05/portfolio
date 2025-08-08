@@ -4,8 +4,8 @@ import { Github, Video, Link as LinkIcon } from "lucide-react";
 const hackathons = [
 	{
 		title: "Binary",
-		location: "Kalyani, Nadia",
-		date: "2024",
+		location: "KGEC,Kalyani",
+		date: "2025",
 		team: "Quantum Minds",
 		description:
 			"Smart Packaging System with IoT and AI for real-time tracking and security.",
@@ -14,26 +14,30 @@ const hackathons = [
 			{ label: "Video", url: "#", icon: <Video className="w-4 h-4 mr-1" /> },
 		],
 	},
-	// {
-	// 	title: "StatusCode1",
-	// 	location: "Kolkata, West Bengal",
-	// 	description:
-	// 		"Organ donation web app for transparent scheduling and communication with hospitals.",
-	// 	links: [
-	// 		{ label: "Github", url: "#", icon: <Github className="w-4 h-4 mr-1" /> },
-	// 		{ label: "Devfolio", url: "#", icon: <LinkIcon className="w-4 h-4 mr-1" /> },
-	// 	],
-	// },
-	// {
-	// 	title: "Diversion 2k25",
-	// 	location: "Kolkata, West Bengal",
-	// 	description:
-	// 		"Meeting scheduler with auto reminders and shared attendee lists.",
-	// 	links: [
-	// 		{ label: "Github", url: "#", icon: <Github className="w-4 h-4 mr-1" /> },
-	// 		{ label: "Devfolio", url: "#", icon: <LinkIcon className="w-4 h-4 mr-1" /> },
-	// 	],
-	// },
+	{
+		title: "Innovocon",
+		location: "JISCE, Kalyani",
+		date: "2025",
+		team: "TechSparks",
+		description:
+			"DocScribd.",
+		links: [
+			{ label: "Github", url: "#", icon: <Github className="w-4 h-4 mr-1" /> },
+			{ label: "Devfolio", url: "#", icon: <LinkIcon className="w-4 h-4 mr-1" /> },
+		],
+	},
+	{
+		title: "Vule Gechi",
+		location: "Kolkata, West Bengal",
+		date: "2024",
+		team: "Quantum Minds",
+		description:
+			"qwerty",
+		links: [
+			{ label: "Github", url: "#", icon: <Github className="w-4 h-4 mr-1" /> },
+			{ label: "Devfolio", url: "#", icon: <LinkIcon className="w-4 h-4 mr-1" /> },
+		],
+	},
 	// {
 	// 	title: "Level SuperMind",
 	// 	location: "Mumbai, Maharashtra",
