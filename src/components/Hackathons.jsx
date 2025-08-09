@@ -68,16 +68,16 @@ const hackathons = [
 	// 		{ label: "Devfolio", url: "#", icon: <LinkIcon className="w-4 h-4 mr-1" /> },
 	// 	],
 	// },
-	// {
-	// 	title: "Diversion 2k25",
-	// 	location: "Kolkata, West Bengal",
-	// 	description:
-	// 		"Meeting scheduler with auto reminders and shared attendee lists.",
-	// 	links: [
-	// 		{ label: "Github", url: "#", icon: <Github className="w-4 h-4 mr-1" /> },
-	// 		{ label: "Devfolio", url: "#", icon: <LinkIcon className="w-4 h-4 mr-1" /> },
-	// 	],
-	// },
+	{
+		title: "JISTech 2k23",
+		location: "JISCE, Kalyani",
+		description:
+			"Smart Shopping Trolley",
+		links: [
+			{ label: "Github", url: "#", icon: <Github className="w-4 h-4 mr-1" /> },
+			{ label: "Devfolio", url: "#", icon: <LinkIcon className="w-4 h-4 mr-1" /> },
+		],
+	},
 ];
 
 function HackathonCard({ hackathon, isActive }) {
