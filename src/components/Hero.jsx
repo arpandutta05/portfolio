@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { Github, Linkedin, Mail, Phone, Download, Sparkles, Coffee, Instagram, Twitter } from "lucide-react"
+import { Github, Linkedin, Mail, Phone, Download, Sparkles, Coffee, Instagram, Twitter, Verified } from "lucide-react"
 import { Button } from "./ui/Button"
 
 const Hero = () => {
@@ -114,9 +114,10 @@ const Hero = () => {
                 />
               </div>
             </div>
-            <div className="absolute -top-4 -right-4 bg-gradient-to-r from-amber-400 to-orange-500 rounded-full p-3 animate-bounce shadow-lg">
-              <Coffee className="w-6 h-6 text-white" />
+            <div className="absolute -top-4 -right-4 bg-gradient-to-r from-blue-400 to-sky-500 rounded-full p-3 animate-no-bounce shadow-lg">
+              <Verified className="w-8 h-8 text-white" />
             </div>
+          
             <Sparkles className="absolute -bottom-2 -left-2 w-8 h-8 text-yellow-400 animate-pulse" />
           </div>
 
