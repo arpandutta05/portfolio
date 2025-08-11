@@ -114,11 +114,11 @@ const Hero = () => {
                 />
               </div>
             </div>
-            <div className="absolute -top-4 -right-4 bg-gradient-to-r from-blue-400 to-sky-500 rounded-full p-3 animate-no-bounce shadow-lg">
-              <Verified className="w-8 h-8 text-white" />
+            <div className="absolute -top-2 -right-2 bg-gradient-to-r from-blue-400 to-sky-500 rounded-full p-1 animate-no-bounce shadow-lg">
+              <Verified className="w-9 h-9 text-white " />
             </div>
           
-            <Sparkles className="absolute -bottom-2 -left-2 w-8 h-8 text-yellow-400 animate-pulse" />
+            <Sparkles className="absolute -bottom-1 -left-1 w-8 h-8 text-yellow-400 animate-pulse" />
           </div>
 
           <h1 className="text-2xl xs:text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-gradient bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent break-words">
