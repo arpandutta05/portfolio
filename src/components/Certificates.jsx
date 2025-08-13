@@ -6,26 +6,27 @@ import DocumentViewer from "./DocumentViewer"
 
 const Certificates = () => {
   const certificates = [
-    // {
-    //   title: "Full Stack Web Development",
-    //   issuer: "Coursera",
-    //   date: "2023",
-    //   image: "https://via.placeholder.com/300x200/3B82F6/FFFFFF?text=Full+Stack+Certificate",
-    //   color: "from-blue-500 to-cyan-500",
-    //   type: "Course Completion",
-    //   documents: [
-    //     {
-    //       name: "Certificate.pdf",
-    //       url: "https://via.placeholder.com/600x400/3B82F6/FFFFFF?text=Full+Stack+Certificate",
-    //       type: "application/pdf",
-    //     },
-    //     {
-    //       name: "Course Completion Badge.png",
-    //       url: "https://via.placeholder.com/300x300/3B82F6/FFFFFF?text=Badge",
-    //       type: "image/png",
-    //     },
-    //   ],
-    // },
+    {
+      title: "Java Full Stack Web Development",
+      issuer: "Infosys Springboard",
+      date: "2025",
+      image: "https://d3lhkh3wk022pp.cloudfront.net/content-store/Shared/Shared/Public/lex_auth_012880464547618816347_shared/artifacts/p22.jpg",
+      url: "https://drive.google.com/drive/folders/1BSWikNgvR8t0DQ6uO0DKbsVtvWE1Y-rs?usp=drive_link",
+      color: "from-blue-500 to-cyan-500",
+      type: "Course Completion",
+      // documents: [
+      //   {
+      //     name: "Certificate.pdf",
+      //     url: "https://via.placeholder.com/600x400/3B82F6/FFFFFF?text=Full+Stack+Certificate",
+      //     type: "application/pdf",
+      //   },
+      //   {
+      //     name: "Course Completion Badge.png",
+      //     url: "https://via.placeholder.com/300x300/3B82F6/FFFFFF?text=Badge",
+      //     type: "image/png",
+      //   },
+      // ],
+    },
     // {
     //   title: "Machine Learning Specialization",
     //   issuer: "Stanford University",
@@ -207,7 +208,7 @@ const Certificates = () => {
                     className={`absolute inset-0 bg-gradient-to-br ${cert.color} opacity-20 group-hover:opacity-30 transition-opacity duration-300`}
                   ></div>
 
-                  <div className="absolute inset-0 flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  {/* <div className="absolute inset-0 flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <Button
                       size="sm"
                       className="bg-white/90 text-gray-900 hover:bg-white shadow-lg transform hover:scale-105 transition-all duration-200"
@@ -223,7 +224,7 @@ const Certificates = () => {
                       <Download className="w-4 h-4 mr-1" />
                       Download
                     </Button>
-                  </div>
+                  </div> */}
                 </div>
 
                 <CardHeader className="pb-2">
@@ -244,6 +245,7 @@ const Certificates = () => {
                   <Button
                     size="sm"
                     className={`w-full bg-gradient-to-r ${cert.color} hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-white mb-4`}
+                    onClick={() => window.open(cert.url, '_blank', 'noopener,noreferrer')}
                   >
                     <Award className="w-4 h-4 mr-2" />
                     View Certificate
@@ -260,7 +262,7 @@ const Certificates = () => {
           ))}
         </div>
 
-        <ScrollReveal animation="fade-up" delay={800}>
+        {/* <ScrollReveal animation="fade-up" delay={800}>
           <div className="mt-12 sm:mt-16 grid grid-cols-1 md:grid-cols-4 gap-6">
             {[
               { label: "Total Certificates", value: "15+", color: "from-blue-500 to-cyan-500" },
@@ -279,7 +281,7 @@ const Certificates = () => {
               </div>
             ))}
           </div>
-        </ScrollReveal>
+        </ScrollReveal> */}
       </div>
     </section>
   )
