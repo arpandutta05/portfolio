@@ -30,26 +30,44 @@ const About = () => {
     <section id="about" className="py-16 sm:py-20 px-4 relative overflow-hidden">
       <div className="max-w-6xl mx-auto relative z-10">
         <ScrollReveal animation="fade-up">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
+          <div className="mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-center md:text-left bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
               About Me
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-cyan-400 mx-auto rounded-full"></div>
-          </div>
-        </ScrollReveal>
 
-        <ScrollReveal animation="zoom-in" delay={200}>
-          <div className="bg-white/5 backdrop-blur-lg rounded-3xl shadow-2xl p-6 sm:p-8 lg:p-12 mb-8 sm:mb-12 border border-white/10">
-            <p className="text-lg sm:text-xl text-gray-300 leading-relaxed text-center mb-6 sm:mb-8">
-              I am a passionate and driven individual with a strong interest in technology, software development, and AI
-              applications in healthcare. I have hands-on experience with IoT projects, including NodeMCU and ESP32-
-              CAM-based systems. I have also developed full-stack web applications using the MERN stack.
-            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              {/* Left: animated illustration (hidden on small screens) */}
+              <div className="flex items-center justify-center md:justify-start">
+                <div className="relative w-64 sm:w-80">
+                  <img
+                    src="gif/Developer.gif"
+                    alt="Developer coding animation"
+                    className="w-full h-auto rounded-lg shadow-2xl animate-floating"
+                  />
+                </div>
+              </div>
 
-            <div className="flex justify-center">
-              <div className="inline-flex items-center gap-2 px-4 sm:px-6 py-3 bg-gradient-to-r from-amber-500/20 to-orange-500/20 rounded-full border border-amber-400/30">
-                <Coffee className="w-5 h-5 text-amber-400" />
-                <span className="text-amber-300 font-semibold text-sm sm:text-base">Powered by Mr. Dutta </span>
+              {/* Right: text */}
+              <div>
+                <div className="bg-white/5 backdrop-blur-lg rounded-3xl shadow-2xl p-6 sm:p-8 lg:p-10 border border-white/10">
+                  <p className="text-lg sm:text-xl text-gray-300 leading-relaxed mb-6">
+                    I am a passionate and driven individual with a strong interest in technology, software development,
+                    and AI applications in healthcare. I have hands-on experience with IoT projects, including NodeMCU and
+                    ESP32-CAM-based systems. I have also developed full-stack web applications using the MERN stack.
+                  </p>
+
+                  <p className="text-gray-300 leading-relaxed mb-4">
+                    I specialize in developing scalable applications using Spring Boot, Hibernate, and other Java frameworks.
+                    I'm also proficient in frontend technologies like HTML, CSS, JavaScript, and have experience with IoT projects.
+                  </p>
+
+                  <div className="flex justify-start">
+                    <div className="inline-flex items-center gap-2 px-4 py-3 bg-gradient-to-r from-amber-500/20 to-orange-500/20 rounded-full border border-amber-400/30">
+                      {/* <Coffee className="w-5 h-5 text-amber-400" /> */}
+                      <span className="text-amber-300 font-semibold text-sm"> ~ Mr. Dutta</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
