@@ -1,4 +1,5 @@
 import { Code, Brain, Cpu, Coffee } from "lucide-react"
+import { DotLottieReact } from "@lottiefiles/dotlottie-react"
 import ScrollReveal from "./ScrollReveal"
 
 const About = () => {
@@ -39,15 +40,29 @@ const About = () => {
             <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-pink-400 mx-auto rounded-full"></div>
           </div>
         </ScrollReveal>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-left sm:gap-10 lg:gap-1">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-1 items-left sm:gap-10 lg:gap-1">
               {/* Left: animated illustration (hidden on small screens) */}
-              <div className="flex items-center justify-center md:justify-start p-20">
-                <div className="relative w-64 sm:w-80">
-                  <img
-                    src="gif/Developer.gif"
-                    alt="Developer coding animation"
-                    className="w-full h-auto rounded-lg shadow-2xl animate-floating"
-                  />
+              <div className="flex items-center justify-left md:justify-start order-1 md:order-2">
+                <div className="order-1 md:order-2 relative w-full">
+                  <div className="relative z-10 rounded-lg overflow-hidden max-w-[800px] mx-auto">
+                    <DotLottieReact
+                      src="https://lottie.host/1ea00622-161d-4102-ac33-a449424558de/GgJOf7y2Ka.lottie"
+                      loop
+                      autoplay
+                      // ensure the animation itself is transparent
+                      style={{
+                        width: "120%",
+                        maxWidth: "800px",
+                        height: "auto",
+                        maxHeight: "800px",
+                        display: "block",
+                        background: "transparent",
+                      }}
+                      background="transparent"
+                    />
+                  </div>
+
+                  <div className="absolute top-0 right-0 w-full h-full transparent transform translate-x-4 translate-y-4 rounded-lg -z-10 animation"></div>
                 </div>
               </div>
 
