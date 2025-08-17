@@ -40,11 +40,11 @@ const About = () => {
             <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-pink-400 mx-auto rounded-full"></div>
           </div>
         </ScrollReveal>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-1 items-left sm:gap-10 lg:gap-1">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-left sm:gap-10 lg:gap-0">
               {/* Left: animated illustration (hidden on small screens) */}
-              <div className="flex items-center justify-left md:justify-start order-1 md:order-2">
+              <div className="flex items-center justify-left md:justify">
                 <div className="order-1 md:order-2 relative w-full">
-                  <div className="relative z-10 rounded-lg overflow-hidden max-w-[800px] mx-auto">
+                  <div className="relative z-0 rounded-lg overflow-hidden max-w-[800px] mx-auto justify-center">
                     <DotLottieReact
                       src="https://lottie.host/1ea00622-161d-4102-ac33-a449424558de/GgJOf7y2Ka.lottie"
                       loop
@@ -68,7 +68,7 @@ const About = () => {
 
               {/* Right: text */}
               <div>
-                
+                <div className="flex items-center justify-center md:justify-start mb-6 md:mb-0">
                 <div className="bg-white/5 backdrop-blur-lg rounded-3xl shadow-2xl p-6 sm:p-8 lg:p-8 border border-white/10 transition-all duration-700 hover:scale-[1.08]">
                   <p className="text-lg sm:text-xl text-gray-300 leading-relaxed mb-6">
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-center md:text-left bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
@@ -89,6 +89,7 @@ const About = () => {
                       {/* <Coffee className="w-5 h-5 text-amber-400" /> */}
                       <span className="text-amber-300 font-semibold text-sm"> ~ Mr. Dutta</span>
                     </div>
+                  </div>
                   </div>
                 </div>
               </div>
