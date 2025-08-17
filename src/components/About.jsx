@@ -40,20 +40,17 @@ const About = () => {
             <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-pink-400 mx-auto rounded-full"></div>
           </div>
         </ScrollReveal>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-left sm:gap-10 lg:gap-0">
-              {/* Left: animated illustration (hidden on small screens) */}
-              <div className="flex items-center justify-left md:justify">
-                <div className="order-1 md:order-2 relative w-full">
-                  <div className="relative z-0 rounded-lg overflow-hidden max-w-[800px] mx-auto justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 place-items-center sm:gap-10 lg:gap-0">
+              {/* Left: animated illustration — centered; keep right padding on mobile */}
+              <div className="flex items-center justify-center w-full">
+                <div className="order-1 md:order-2 relative w-full px-20 pr-10 sm:pr-12 md:pr-0 md:mr-0">
+                  <div className="relative z-10 rounded-lg overflow-hidden mx-auto w-64 sm:w-80 md:w-full md:max-w-[900px]">
                     <DotLottieReact
                       src="https://lottie.host/1ea00622-161d-4102-ac33-a449424558de/GgJOf7y2Ka.lottie"
                       loop
                       autoplay
-                      // ensure the animation itself is transparent
+                      className="w-full h-auto transform md:scale-130 md:origin-center"
                       style={{
-                        width: "120%",
-                        maxWidth: "800px",
-                        height: "auto",
                         maxHeight: "800px",
                         display: "block",
                         background: "transparent",
@@ -62,7 +59,7 @@ const About = () => {
                     />
                   </div>
 
-                  <div className="absolute top-0 right-0 w-full h-full transparent transform translate-x-4 translate-y-4 rounded-lg -z-10 animation"></div>
+                  <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-br transparent transform translate-x-4 translate-y-4 rounded-lg -z-10 animation"></div>
                 </div>
               </div>
 
