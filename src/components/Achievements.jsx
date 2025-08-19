@@ -14,21 +14,21 @@ const Achievements = () => {
       bgColor: "from-yellow-500/10 to-orange-500/10",
       type: "Competition",
       documents: [
-        {
-          name: "Winner Certificate.pdf",
-          url: "https://via.placeholder.com/600x400/EAB308/FFFFFF?text=Winner+Certificate",
-          type: "application/pdf",
-        },
-        {
-          name: "Competition Photo.jpg",
-          url: "https://via.placeholder.com/600x400/EAB308/FFFFFF?text=Competition+Photo",
-          type: "image/jpeg",
-        },
-        {
-          name: "Project Presentation.pdf",
-          url: "https://via.placeholder.com/600x400/EAB308/FFFFFF?text=Project+Presentation",
-          type: "application/pdf",
-        },
+        // {
+        //   name: "Winner Certificate.pdf",
+        //   url: "https://via.placeholder.com/600x400/EAB308/FFFFFF?text=Winner+Certificate",
+        //   type: "application/pdf",
+        // },
+        // {
+        //   name: "Competition Photo.jpg",
+        //   url: "https://via.placeholder.com/600x400/EAB308/FFFFFF?text=Competition+Photo",
+        //   type: "image/jpeg",
+        // },
+        // {
+        //   name: "Project Presentation.pdf",
+        //   url: "https://via.placeholder.com/600x400/EAB308/FFFFFF?text=Project+Presentation",
+        //   type: "application/pdf",
+        // },
       ],
     },
     {
@@ -39,16 +39,16 @@ const Achievements = () => {
       bgColor: "from-purple-500/10 to-pink-500/10",
       type: "Patent",
       documents: [
-        {
-          name: "Patent Certificate.pdf",
-          url: "https://via.placeholder.com/600x400/A855F7/FFFFFF?text=Patent+Certificate",
-          type: "application/pdf",
-        },
-        {
-          name: "Patent Application.pdf",
-          url: "https://via.placeholder.com/600x400/A855F7/FFFFFF?text=Patent+Application",
-          type: "application/pdf",
-        },
+        // {
+        //   name: "Patent Certificate.pdf",
+        //   url: "https://via.placeholder.com/600x400/A855F7/FFFFFF?text=Patent+Certificate",
+        //   type: "application/pdf",
+        // },
+        // {
+        //   name: "Patent Application.pdf",
+        //   url: "https://via.placeholder.com/600x400/A855F7/FFFFFF?text=Patent+Application",
+        //   type: "application/pdf",
+        // },
       ],
     },
     {
@@ -59,16 +59,16 @@ const Achievements = () => {
       bgColor: "from-blue-500/10 to-cyan-500/10",
       type: "Publication",
       documents: [
-        {
-          name: "Research Paper.pdf",
-          url: "https://via.placeholder.com/600x400/3B82F6/FFFFFF?text=Research+Paper",
-          type: "application/pdf",
-        },
-        {
-          name: "Publication Certificate.pdf",
-          url: "https://via.placeholder.com/600x400/3B82F6/FFFFFF?text=Publication+Certificate",
-          type: "application/pdf",
-        },
+        // {
+        //   name: "Research Paper.pdf",
+        //   url: "https://via.placeholder.com/600x400/3B82F6/FFFFFF?text=Research+Paper",
+        //   type: "application/pdf",
+        // },
+        // {
+        //   name: "Publication Certificate.pdf",
+        //   url: "https://via.placeholder.com/600x400/3B82F6/FFFFFF?text=Publication+Certificate",
+        //   type: "application/pdf",
+        // },
       ],
     },
   ]
