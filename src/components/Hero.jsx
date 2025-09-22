@@ -108,7 +108,8 @@ const Hero = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-purple-500 via-pink-500 to-cyan-500 rounded-full animate p-1">
               <div className="w-full h-full bg-slate-900 rounded-full p-2">
                 <img
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/InShot_20240601_195555979-photoaidcom-cropped.jpg-zGO6RcM6MYsuhZtOHLhDDwrrHQKX0Z.png"
+                src="img/MyImage_1.jpg"
+                  // src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/InShot_20240601_195555979-photoaidcom-cropped.jpg-zGO6RcM6MYsuhZtOHLhDDwrrHQKX0Z.png"
                   alt="Arpan Dutta - Full Stack Developer"
                   className="w-full h-full rounded-full object-cover shadow-2xl"
                 />

@@ -46,6 +46,7 @@ const About = () => {
                 <div className="order-1 md:order-2 relative w-full px-20 pr-10 sm:pr-12 md:pr-0 md:mr-0">
                   <div className="relative z-10 rounded-lg overflow-hidden mx-auto w-64 sm:w-80 md:w-full md:max-w-[900px]">
                     <DotLottieReact
+                      // src="img/MyImage_2.jpg"
                       src="https://lottie.host/1ea00622-161d-4102-ac33-a449424558de/GgJOf7y2Ka.lottie"
                       loop
                       autoplay

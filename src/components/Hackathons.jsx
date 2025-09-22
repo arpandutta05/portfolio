@@ -27,7 +27,7 @@ const hackathons = [
 		],
 	},
 	{
-		title: "Vule Gechi",
+		title: "Hack-O-NIT",
 		location: "Kolkata, West Bengal",
 		date: "2024",
 		team: "Quantum Minds",
@@ -75,7 +75,7 @@ const hackathons = [
 			"Smart Shopping Trolley",
 		links: [
 			{ label: "Github", url: "#", icon: <Github className="w-4 h-4 mr-1" /> },
-			{ label: "Devfolio", url: "#", icon: <LinkIcon className="w-4 h-4 mr-1" /> },
+			{ label: "Video", url: "https://youtu.be/V8KDdFkTdgU", icon: <Video className="w-4 h-4 mr-1" /> },
 		],
 	},
 ];

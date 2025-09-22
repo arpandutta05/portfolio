@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "Arpan's Portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -55,14 +55,14 @@
   "main": "eslint.config.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Debmalya06/JobConnect.git"
+    "url": "git+https://github.com/arpandutta05"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Debmalya06/JobConnect/issues"
+    "url": "https://github.com/arpandutta05/portfolio"
   },
-  "homepage": "https://github.com/Debmalya06/JobConnect#readme",
+  "homepage": "https://arpandutta.vercel.app",
   "description": ""
 }
