@@ -2,6 +2,20 @@ import { useEffect, useRef, useState } from "react";
 import { Github, Video, Link as LinkIcon } from "lucide-react";
 
 const hackathons = [
+
+	{
+		title: "JISTech 2k26",
+		location: "JISCE,Kalyani",
+		date: "2026",
+		team: "Quantum Minds",
+		description:
+			"Smart Packaging System with IoT and AI for real-time tracking and security.",
+		links: [
+			{ label: "Github", url: "#", icon: <Github className="w-4 h-4 mr-1" /> },
+			{ label: "Video", url: "#", icon: <Video className="w-4 h-4 mr-1" /> },
+		],
+	},
+	
 	{
 		title: "Binary",
 		location: "KGEC,Kalyani",
